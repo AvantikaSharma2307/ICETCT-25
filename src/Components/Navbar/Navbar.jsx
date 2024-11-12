@@ -35,7 +35,10 @@ const Navbar = () => {
                     <Link to="/speaker">Speaker</Link>
                 </li>
                 <li>
-                    <Link to="/submission">Submission</Link>
+                    <Link to="/Submission">Submission</Link>
+                </li>
+                <li>
+                    <Link to="/CallForPapers">Call For Papers</Link>
                 </li>
                 <li>
                     <Link to="/contact">Contact</Link>

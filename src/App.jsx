@@ -2,6 +2,7 @@ import React, { Suspense } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Spinner from './Components/Spinner/Spinner.jsx';  
 import Navbar from './Components/Navbar/Navbar.jsx';  
+import CallForPapers from './pages/Call-for-papers.jsx'
 
 const Home = React.lazy(() => import("./pages/Home"));
 const Registration = React.lazy(() => import("./pages/Registration"));
@@ -25,6 +26,7 @@ function App() {
             <Route path="/contact" element={<Contact />} />
             <Route path="/commities" element={<Commities />} />
             <Route path="/accomodation" element={<Accomodation />} />
+            <Route path="/CallForPapers" element={<CallForPapers/>}></Route>
           </Routes>
         </Suspense>
       </Router>
