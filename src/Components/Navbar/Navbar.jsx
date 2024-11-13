@@ -4,7 +4,7 @@ import "./Navbar.css";
 import menuIcon from "../../assets/menu-icon.png"; 
 
 const Navbar = () => {
-    const [sticky, setSticky] = useState(false);
+    // const [sticky, setSticky] = useState(false);
     const [mobileMenu, setMobileMenu] = useState(false);
 
     useEffect(() => {
@@ -22,7 +22,7 @@ const Navbar = () => {
     const toggleMenu = () => setMobileMenu(prevState => !prevState);
 
     return (
-        <nav className={`container ${sticky ? "dark-nav" : ""}`}>
+        <nav className="sticky dark-nav h-16">
             <h1>KIET</h1>
             <ul className={mobileMenu ? "mobile-menu" : "mb-menu"}>
                 <li>

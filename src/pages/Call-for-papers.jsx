@@ -126,7 +126,7 @@ export default function CallForPapers() {
   ]
 
   return (
-    <div className="container mx-auto px-4 py-8 bg-blue-50">
+    <div className=" mx-auto px-4 py-8 bg-blue-50">
       <h1 className="text-4xl font-bold mb-6 text-center text-gray-900">Call for Papers</h1>
       <h2 className="text-2xl font-semibold mb-4 text-center text-gray-800">
         International Conference on Emerging Trends in Computational Techniques (ICETCT-2025)

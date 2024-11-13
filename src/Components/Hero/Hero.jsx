@@ -3,7 +3,8 @@ import "./Hero.css";
 
 const Hero = () => {
     return (
-        <div className="hero container">
+        <>
+        <div className="hero ">
             <div className="hero-text">
                 <h1>International Conference on Emerging Trends in Computational Techniques(ICETCT-2025)
                 </h1>
@@ -12,6 +13,8 @@ const Hero = () => {
                 </h2>
             </div>
         </div>
+        <h1 className="text-center text-3xl text-bold mt-14"> About ICETCT </h1>
+        </>
     );
 };
 

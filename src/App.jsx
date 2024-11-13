@@ -14,7 +14,7 @@ const Accomodation = React.lazy(() => import("./pages/Accomodation"));
 
 function App() {
   return (
-    <div>
+    <div className="main">
       <Router>
         <Suspense fallback={<Spinner />}> 
           <Navbar />  
