@@ -23,7 +23,9 @@ const Navbar = () => {
 
     return (
         <nav className="sticky dark-nav h-16">
-            <h1>KIET</h1>
+            <div className="kiet_logo">
+                <img src="image.png"></img>
+            </div>
             <ul className={mobileMenu ? "mobile-menu" : "mb-menu"}>
                 <li className="hover:text-orange-700">
                     <Link to="/">Home</Link>
