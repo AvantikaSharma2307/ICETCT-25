@@ -1,3 +1,4 @@
+
 import React from 'react'
 import ResponsiveTable from '../Components/ResponsiveTable'
 
@@ -17,5 +18,4 @@ function Registration() {
    </>
   )
 }
-
-export default Registration
+export default Registration;
