@@ -23,30 +23,32 @@ const Navbar = () => {
 
     return (
         <nav className={`container ${sticky ? "dark-nav" : ""}`}>
-            <h1>KIET</h1>
+            <div className="kiet_logo">
+                <img src="kiet-group-of-institutions-hd-png-download-removebg-preview.png"></img>
+            </div>
             <ul className={mobileMenu ? "mobile-menu" : "mb-menu"}>
-                <li>
+                <li className="hover:text-orange-700">
                     <Link to="/">Home</Link>
                 </li>
-                <li>
+                <li className="hover:text-orange-700">
                     <Link to="/registration">Registration</Link>
                 </li>
-                <li>
+                <li className="hover:text-orange-700">
                     <Link to="/speaker">Speaker</Link>
                 </li>
-                <li>
+                <li className="hover:text-orange-700">
                     <Link to="/Submission">Submission</Link>
                 </li>
-                <li>
+                <li className="hover:text-orange-700">
                     <Link to="/CallForPapers">Call For Papers</Link>
                 </li>
-                <li>
+                <li className="hover:text-orange-700">
                     <Link to="/contact">Contact</Link>
                 </li>
-                <li>
+                <li className="hover:text-orange-700">
                     <Link to="/commities">Commities</Link>
                 </li>
-                <li>
+                <li className="hover:text-orange-700">
                     <Link to="/accomodation">Accomodation</Link>
                 </li>
             </ul>
