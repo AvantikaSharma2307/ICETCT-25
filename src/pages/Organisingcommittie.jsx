@@ -1,7 +1,7 @@
 import React from 'react'
 function Organisingcommittie() {
   return (
-    <div className="bg-cyan-600">
+    <div className="bg-cyan-600" id='commities'>
       <br />
       <br />
       <br />

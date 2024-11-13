@@ -2,8 +2,8 @@ import React from 'react'
 
 function Accomodation() {
   return (
-    <>
-    <div className='text-center text-white w-screen h-56' style={{backgroundColor:"#2b3c63"}}>
+    <div id='accomodation'>
+    <div className='text-center text-white w-screen h-56' style={{backgroundColor:"#2b3c63"}} >
     <h1 className='pt-36 text-6xl text-extrabold'>Accomodation</h1>
   </div>
   <div><p className='text-gray-600 text-center text-bold text-3xl mt-16'>
@@ -13,7 +13,7 @@ function Accomodation() {
    Phone: ………………………<br></br>
    Email: ………………………<br></br>
 </p></div>
-  </>
+  </div>
   )
 }
 

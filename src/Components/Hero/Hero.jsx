@@ -4,7 +4,7 @@ import "./Hero.css";
 const Hero = () => {
     return (
         <>
-        <div className="hero ">
+        <div className="hero " id="home">
             <div className="hero-text">
                 <h1>International Conference on Emerging Trends in Computational Techniques
                 </h1>

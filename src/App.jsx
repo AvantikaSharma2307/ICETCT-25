@@ -1,5 +1,4 @@
 import React, { Suspense } from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Spinner from "./Components/Spinner/Spinner.jsx";
 import Navbar from "./Components/Navbar/Navbar.jsx";
 import CallForPapers from "./pages/Call-for-papers.jsx";
@@ -14,28 +13,22 @@ const Accomodation = React.lazy(() => import("./pages/Accomodation"));
 const Organisingcommittie = React.lazy(() =>
   import("./pages/Organisingcommittie.jsx")
 );
+
 function App() {
   return (
     <div className="main">
-      <Router>
-        <Suspense fallback={<Spinner />}>
-          <Navbar />
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/registration" element={<Registration />} />
-            <Route path="/speaker" element={<Speaker />} />
-            <Route path="/submission" element={<Submission />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/commities" element={<Commities />} />
-            <Route path="/accomodation" element={<Accomodation />} />
-            <Route path="/CallForPapers" element={<CallForPapers />}></Route>
-            <Route
-              path="/Organising"
-              element={<Organisingcommittie></Organisingcommittie>}
-            ></Route>
-          </Routes>
-        </Suspense>
-      </Router>
+      <Suspense fallback={<Spinner />}>
+        <Navbar />
+        <Home />
+        <Registration />
+        <Speaker />
+        <Submission />
+        <Contact />
+        <Commities />
+        <Accomodation />
+        <CallForPapers />
+        <Organisingcommittie />
+      </Suspense>
     </div>
   );
 }
