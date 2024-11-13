@@ -4,7 +4,7 @@ import "./Navbar.css";
 import menuIcon from "../../assets/menu-icon.png"; 
 
 const Navbar = () => {
-    // const [sticky, setSticky] = useState(false);
+    const [sticky, setSticky] = useState(false);
     const [mobileMenu, setMobileMenu] = useState(false);
 
     useEffect(() => {
@@ -22,9 +22,10 @@ const Navbar = () => {
     const toggleMenu = () => setMobileMenu(prevState => !prevState);
 
     return (
-        <nav className="sticky dark-nav h-16">
+        <nav className={`${sticky ? "dark-nav" : ""}  h-16`}>
             <div className="kiet_logo">
-                <img src="image.png"></img>
+                <img 
+                src="image.png"/>
             </div>
             <ul className={mobileMenu ? "mobile-menu" : "mb-menu"}>
                 <li className="hover:text-orange-700">
