@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom"; 
 import "./Navbar.css";
 import menuIcon from "../../assets/menu-icon.png"; 
 
@@ -22,35 +21,34 @@ const Navbar = () => {
     const toggleMenu = () => setMobileMenu(prevState => !prevState);
 
     return (
-        <nav className={`${sticky ? "dark-nav" : ""}  h-16`}>
+        <nav className={`${sticky ? "dark-nav" : ""} h-16`}>
             <div className="kiet_logo">
-                <img 
-                src="image.png"/>
+                <img src="image.png" alt="Logo" />
             </div>
             <ul className={mobileMenu ? "mobile-menu" : "mb-menu"}>
                 <li className="hover:text-orange-700">
-                    <Link to="/">Home</Link>
+                    <a href="#home">Home</a>
                 </li>
                 <li className="hover:text-orange-700">
-                    <Link to="/registration">Registration</Link>
+                    <a href="#registration">Registration</a>
                 </li>
                 <li className="hover:text-orange-700">
-                    <Link to="/speaker">Speaker</Link>
+                    <a href="#speaker">Speaker</a>
                 </li>
                 <li className="hover:text-orange-700">
-                    <Link to="/Submission">Submission</Link>
+                    <a href="#submission">Submission</a>
                 </li>
                 <li className="hover:text-orange-700">
-                    <Link to="/CallForPapers">Call For Papers</Link>
+                    <a href="#callforpapers">Call For Papers</a>
                 </li>
                 <li className="hover:text-orange-700">
-                    <Link to="/contact">Contact</Link>
+                    <a href="#contact">Contact</a>
                 </li>
                 <li className="hover:text-orange-700">
-                    <Link to="/commities">Commities</Link>
+                    <a href="#commities">Commities</a>
                 </li>
                 <li className="hover:text-orange-700">
-                    <Link to="/accomodation">Accomodation</Link>
+                    <a href="#accomodation">Accomodation</a>
                 </li>
             </ul>
             <img
