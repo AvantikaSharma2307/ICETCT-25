@@ -30,26 +30,29 @@ const Navbar = () => {
                     <a href="#home">Home</a>
                 </li>
                 <li className="hover:text-orange-700">
-                    <a href="#registration">Registration</a>
-                </li>
-                <li className="hover:text-orange-700">
-                    <a href="#speaker">Speaker</a>
+                    <a href="#callforpapers">Call For Papers</a>
                 </li>
                 <li className="hover:text-orange-700">
                     <a href="#submission">Submission</a>
                 </li>
                 <li className="hover:text-orange-700">
-                    <a href="#callforpapers">Call For Papers</a>
-                </li>
-                <li className="hover:text-orange-700">
-                    <a href="#contact">Contact</a>
-                </li>
-                <li className="hover:text-orange-700">
-                    <a href="#commities">Commities</a>
+                    <a href="#registration">Registration</a>
                 </li>
                 <li className="hover:text-orange-700">
                     <a href="#accomodation">Accomodation</a>
                 </li>
+                <li className="hover:text-orange-700">
+                    <a href="#speaker">Speaker</a>
+                </li>
+                <li className="hover:text-orange-700">
+                    <a href="#commities">Commities</a>
+                </li>
+
+                <li className="hover:text-orange-700">
+                    <a href="#contact">Contact</a>
+                </li>
+               
+               
             </ul>
             <img
                 src={menuIcon}

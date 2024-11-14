@@ -1,230 +1,199 @@
-import React from 'react'
+import React from 'react';
+
 function Organisingcommittie() {
   return (
-    <div className="bg-cyan-600" id='commities'>
-      <br />
-      <br />
-      <br />
-      <br />
-      <div className="flex justify-center items-center text-2xl font-bold ">
-        Organising Committee
-      </div>
-      <br />
-      <br />
-      <br />
-      <div>
-        <div className="flex justify-center items-center font-bold text-xl">
-          Patron in Chief
-        </div>
-        <div className="flex justify-evenly">
-          <div className="w-2/6">
+    <div className="bg-blue-50 text-center px-4  mt-24 md:px-8" id="commities">
+      <div className="my-8">
+        <div className="text-4xl font-bold mb-4">Organising Committee</div>
+
+        {/* Patron in Chief */}
+        <div className="text-xl font-bold mb-4">Patron in Chief</div>
+        <div className="flex flex-wrap justify-center gap-8">
+          <div className="w-full sm:w-2/6">
             <div>Shri Sarish Agarwal</div>
             <div>Honourable Chairman</div>
             <div>KIET Group of Institutions</div>
           </div>
-          <div>
+          <div className="w-full sm:w-2/6">
             <div>Prof. (Dr.) Preeti Bajaj</div>
             <div>Director General</div>
-            <div>KIET Group of Institutions, Ghaziabad</div>
+            <div>KIET Group of Institutions, Delhi-NCR, Ghaziabad</div>
           </div>
         </div>
-      </div>
-      <br />
-      <div>
-        <div className="flex justify-center items-center font-bold text-xl  ">
-          General Chair
-        </div>
-        <div className="flex justify-evenly">
-          <div className="w-2/6">
+
+        {/* General Chair */}
+        <div className="text-xl font-bold mt-8 mb-4">General Chair</div>
+        <div className="flex flex-wrap justify-center gap-8">
+          <div className="w-full sm:w-2/6">
             <div>Dr. Manoj Goel</div>
             <div>Joint Director</div>
             <div>KIET Group of Institutions</div>
           </div>
-          <div>
-            <div>Dr. Anil Ahlawat </div>
+          <div className="w-full sm:w-2/6">
+            <div>Dr. Anil Ahlawat</div>
             <div>Dean Academics</div>
-            <div>KIET Group of Institutions, Ghaziabad</div>
+            <div>KIET Group of Institutions, Delhi NCR, Ghaziabad</div>
           </div>
         </div>
-      </div>
-      <br />
-      <br />
-      <div>
-        <div className="flex justify-evenly">
-          <div className=" w-2/6">
-            <div className="flex justify-center items-center font-bold text-xl">
-              Conference Chair
-            </div>
-            <br />
-            <div>Prof. (Dr.) Rekha Kashyapl</div>
-            <div>
-              Dean,
-              <br />
-              Department of CSE-AI and Department of CSE-AIML
-            </div>
-            <div>KIET Group of Institutions</div>
-            <br />
-            <br />
-            <br />
-            <div className=" font-bold text-xl">
-              Technical Program Committee Chair
-            </div>
-            <br />
 
+        {/* Conference Chair */}
+        <div className="text-xl font-bold mt-8 mb-4">Conference Chair</div>
+        <div className="w-full sm:w-2/6 mx-auto">
+          <div className="text-center">
+            <div>Prof. (Dr.) Rekha Kashyap</div>
+            <div>Dean, Department of CSE-AI and Department of CSE-AIML</div>
+            <div>KIET Group of Institutions</div>
+          </div>
+        </div>
+
+        {/* Technical Program Committee */}
+        <div className="text-xl font-bold mt-8 mb-4">Technical Program Committee</div>
+        <div className="flex flex-wrap justify-center gap-8">
+          <div className="w-full sm:w-2/6">
             <div>Ms. Nidhi Singh (Chair)</div>
             <div>Ms. Preeti Verma (Co-Chair)</div>
             <div>Mr. Thammali Gangadhar (Member)</div>
             <div>Ms. Ayushi Mittal (Member)</div>
-            <br />
-            <br />
-            <br />
-            <div className=" font-bold text-xl">Publication Committee</div>
-            <br />
+          </div>
+        </div>
 
-            <div>Ms. Umang Kant (Chair) </div>
+        {/* Publication Committee */}
+        <div className="text-xl font-bold mt-8 mb-4">Publication Committee</div>
+        <div className="flex flex-wrap justify-center gap-8">
+          <div className="w-full sm:w-2/6">
+            <div>Ms. Umang Kant (Chair)</div>
             <div>Ms. Kavya Gupta (Co-Chair)</div>
-            <div>Ms.Anjali Chauhan (Member)</div>
+            <div>Ms. Anjali Chauhan (Member)</div>
+          </div>
+        </div>
 
-            <br />
-            <br />
-            <br />
-            <div className=" font-bold text-xl">Event Management Committee</div>
-            <br />
-
-            <div>Ms. Bhawna (Chair) </div>
+        {/* Event Management Committee */}
+        <div className="text-xl font-bold mt-8 mb-4">Event Management Committee</div>
+        <div className="flex flex-wrap justify-center gap-8">
+          <div className="w-full sm:w-2/6">
+            <div>Ms. Bhawna (Chair)</div>
             <div>Ms. Akanksha (Co-Chair)</div>
             <div>Ms. Chayanika Bhattacharjee</div>
+          </div>
+        </div>
 
-            <br />
-            <br />
-            <br />
-            <div className=" font-bold text-xl">Publicity Committee</div>
-            <br />
+        {/* Publicity Committee */}
+        <div className="text-xl font-bold mt-8 mb-4">Publicity Committee</div>
+        <div className="flex flex-wrap justify-center gap-8">
+          <div className="w-full sm:w-2/6">
+            <div>Mr. Bhuvnesh Malik (Chair)</div>
+          </div>
+        </div>
 
-            <div>Mr. Bhuvnesh Malik (Chair) </div>
-
-            <br />
-            <br />
-            <br />
-            <div className=" font-bold text-xl">
-              Local Arrangement Committee
-            </div>
-            <br />
-            <div>Mr. Anurag Gupta (Chair) </div>
+        {/* Local Arrangement Committee */}
+        <div className="text-xl font-bold mt-8 mb-4">Local Arrangement Committee</div>
+        <div className="flex flex-wrap justify-center gap-8">
+          <div className="w-full sm:w-2/6">
+            <div>Mr. Anurag Gupta (Chair)</div>
             <div>Mr. Ajay Singh (Co-Chair)</div>
             <div>Ms. Ruchi Arora (Member)</div>
             <div>Mr. Jitendra (Member)</div>
+          </div>
+        </div>
 
-            <br />
-            <br />
-            <br />
-            <div className=" font-bold text-xl">Finance Committee</div>
-            <br />
-            <div>Ms. Kumud Alok (Chair) </div>
+        {/* Finance Committee */}
+        <div className="text-xl font-bold mt-8 mb-4">Finance Committee</div>
+        <div className="flex flex-wrap justify-center gap-8">
+          <div className="w-full sm:w-2/6">
+            <div>Ms. Kumud Alok (Chair)</div>
             <div>Mr. Rachit Patel (Co-Chair)</div>
+          </div>
+        </div>
 
-            <br />
-            <br />
-            <br />
-            <div className=" font-bold text-xl">Registration Committee</div>
-            <br />
-            <div>Ms. Ruchika Mavis Daniel (Chair) </div>
-            <div>Ms.Gargi Singh (Co-Chair)</div>
+        {/* Registration Committee */}
+        <div className="text-xl font-bold mt-8 mb-4">Registration Committee</div>
+        <div className="flex flex-wrap justify-center gap-8">
+          <div className="w-full sm:w-2/6">
+            <div>Ms. Ruchika Mavis Daniel (Chair)</div>
+            <div>Ms. Gargi Singh (Co-Chair)</div>
             <div>Ms. Shaifali Rao (Member)</div>
+          </div>
+        </div>
 
-            <br />
-            <br />
-            <br />
-            <div className=" font-bold text-xl">
-              Technical Session/Speaker Committee
-            </div>
-            <br />
-            <div>Dr. Puneet Garg (Chair) </div>
+        {/* Other Committees */}
+        <div className="text-xl font-bold mt-8 mb-4">Technical Session/Speaker Committee</div>
+        <div className="flex flex-wrap justify-center gap-8">
+          <div className="w-full sm:w-2/6">
+            <div>Dr. Puneet Garg (Chair)</div>
             <div>Dr. Gaurav Srivastav (Co-Chair)</div>
+          </div>
+        </div>
 
-            <br />
-            <br />
-            <br />
-            <div className=" font-bold text-xl">Sponsorship Committee</div>
-            <br />
-            <div>Dr. Puneet Garg (Chair) </div>
+        <div className="text-xl font-bold mt-8 mb-4">Sponsorship Committee</div>
+        <div className="flex flex-wrap justify-center gap-8">
+          <div className="w-full sm:w-2/6">
+            <div>Dr. Puneet Garg (Chair)</div>
             <div>Ms. Payal Chhabra (Member)</div>
             <div>Mr. Rajeev Kumar Singh (Member)</div>
             <div>Ms. Richa Singh (Co-Chair)</div>
+          </div>
+        </div>
 
-            <br />
-            <br />
-            <br />
-            <div className=" font-bold text-xl">Media Management Committee</div>
-            <br />
-            <div>Ms. Aastha Gupta (Chair) </div>
+        <div className="text-xl font-bold mt-8 mb-4">Media Management Committee</div>
+        <div className="flex flex-wrap justify-center gap-8">
+          <div className="w-full sm:w-2/6">
+            <div>Ms. Aastha Gupta (Chair)</div>
             <div>Mr. Shivansh Prasad (Co-Chair)</div>
+          </div>
+        </div>
 
-            <br />
-            <br />
-            <br />
-            <div className=" font-bold text-xl">
-              Abstract Book/Conference Proceedings{" "}
-            </div>
-            <br />
+        <div className="text-xl font-bold mt-8 mb-4">Abstract Book/Conference Proceedings</div>
+        <div className="flex flex-wrap justify-center gap-8">
+          <div className="w-full sm:w-2/6">
             <div>Ms. Richa Singh (Chair)</div>
             <div>Mr. Deepak Tripathi (Co-Chair)</div>
             <div>Mr. Abhishek Shukla (Member)</div>
+          </div>
+        </div>
 
-            <br />
-            <br />
-            <br />
-            <div className=" font-bold text-xl">
-              Website Management Committee{" "}
-            </div>
-            <br />
+        {/* Website Management Committee */}
+        <div className="text-xl font-bold mt-8 mb-4">Website Management Committee</div>
+        <div className="flex flex-wrap justify-center gap-8">
+          <div className="w-full sm:w-2/6">
             <div>Mr. Rajeev Kumar Singh (Chair)</div>
+          </div>
+        </div>
 
-            <br />
-            <br />
-            <br />
-            <div className=" font-bold text-xl">
-              Registration Kit/Memento Committee
-            </div>
-            <br />
-            <div>Mr. Nagendra Nath Dubey (Chair) </div>
+        {/* Registration Kit/Memento Committee */}
+        <div className="text-xl font-bold mt-8 mb-4">Registration Kit/Memento Committee</div>
+        <div className="flex flex-wrap justify-center gap-8">
+          <div className="w-full sm:w-2/6">
+            <div>Mr. Nagendra Nath Dubey (Chair)</div>
             <div>Mr. Sahil Bhatia (Co-Chair)</div>
             <div>Mr. Anuj Gupta (Member)</div>
-
-            <br />
-            <br />
-            <br />
-            <div className=" font-bold text-xl">Certificate Committee</div>
-            <br />
-            <div>Mr. Mayank Lakhotia (Chair) </div>
-            <div>Ms. Nishtha Negi (Co-Chair)</div>
-            <div>Ms. Priyanka (Member)</div>
-            <div>Mr. Bikki Kumar (Member)</div>
-
-            <br />
-            <br />
-            <br />
-            <div className=" font-bold text-xl">Discipline Committee</div>
-            <br />
-            <div>Mr. Gagan Kumar Singh (Chair) </div>
-            <div>Mr. Tanmoy Das (Co-Chair)</div>
-            <div>Mr. Bhuvnesh Malik (Member)</div>
-            <div>Mr. Rishabh Sachan (Member)</div>
-            <div>Mr. Abhishek Kumar (Member)</div>
-            <div>Mr. Mukesh Lomror (Member) font-bold</div>
           </div>
-          <div>
-            <div className="flex justify-center items-center font-bold text-xl">
-              Convener
-            </div>
-            <br />
-            <div>Dr. Puneet Garg</div>
-            <div>Associate Professor, Department of CSE-AI</div>
+        </div>
+
+        {/* Certificate Committee */}
+        <div className="text-xl font-bold mt-8 mb-4">Certificate Committee</div>
+        <div className="flex flex-wrap justify-center gap-8">
+          <div className="w-full sm:w-2/6">
+            <div>Ms. Nidhi Singh (Chair)</div>
+            <div>Mr. Ashish Gaur (Co-Chair)</div>
           </div>
+        </div>
+
+        {/* Concluding Remarks */}
+        <div className="text-xl font-bold mt-8 mb-4">Concluding Remarks</div>
+        <div className="flex flex-wrap justify-center gap-8">
+          <div className="w-full sm:w-2/6">
+            <div>Prof. (Dr.) Rekha Kashyap</div>
+          </div>
+        </div>
+
+        {/* Acknowledgement */}
+        <div className="text-xl font-bold mt-8 mb-4">Acknowledgement</div>
+        <div className="text-center">
+          <div>We thank our Sponsors and Partners for their generous support</div>
         </div>
       </div>
     </div>
-  )
+  );
 }
 
-export default Organisingcommittie
+export default Organisingcommittie;

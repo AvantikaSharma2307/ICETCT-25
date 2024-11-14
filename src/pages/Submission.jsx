@@ -12,7 +12,7 @@ export default function PaperSubmission() {
   return (
     <div className="min-h-screen  py-12 px-4 sm:px-6 lg:px-8" id='submission'>
       <div className="max-w-4xl mx-auto">
-        <h1 className="text-5xl font-extrabold text-center mb-12 text-black">
+        <h1 className="text-5xl font-bold text-center mb-12 text-black">
           Paper Submission
         </h1>
         

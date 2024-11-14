@@ -1,15 +1,24 @@
-import React from 'react'
+import React from 'react';
 
 function Speaker() {
   return (
     <>
-    <div className='text-center text-white w-screen h-56' style={{backgroundColor:"#2b3c63"}}>
-      <h1 className='pt-36 text-6xl text-extrabold'>Speaker's</h1>
-    </div>
-    <div><p className='text-gray-600 text-center text-bold text-3xl mt-16'>
-      Speakers in ICETCT-2025 will be officials from reputed Industries and Academicians’ from Prominent Institutions.</p></div>
+      {/* Hero Section */}
+      <div className="text-center text-white w-full h-16 ">
+        <h1 className=" mt-16 text-3xl md:text-5xl font-bold text-black">
+          Speaker's
+        </h1>
+      </div>
+
+      {/* Content Section */}
+      <div className="">
+        <p className="text-gray-600 text-center text-lg md:text-3xl font-semibold ">
+          Speakers in ICETCT-2025 will be officials from reputed industries and academicians
+          from prominent institutions.
+        </p>
+      </div>
     </>
-  )
+  );
 }
 
-export default Speaker
+export default Speaker;
