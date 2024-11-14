@@ -3,6 +3,7 @@ import Spinner from "./Components/Spinner/Spinner.jsx";
 import Navbar from "./Components/Navbar/Navbar.jsx";
 import CallForPapers from "./pages/Call-for-papers.jsx";
 import Footer from "./Components/Footer/Footer.jsx";
+import AboutUs from "./Components/AboutUs/AboutUs.jsx";
 
 const Home = React.lazy(() => import("./pages/Home"));
 const Registration = React.lazy(() => import("./pages/Registration"));
@@ -21,6 +22,7 @@ function App() {
       <Suspense fallback={<Spinner />}>
         <Navbar />
         <Home />
+        <AboutUs/>
         <CallForPapers />
         <Submission />
         <Registration />
