@@ -4,15 +4,16 @@ import Button from '../Components/Button.jsx'
 import CardHeader from '../Components/CardHeader.jsx'
 import CardContent from '../Components/CardContent.jsx'
 import CardTitle from '../Components/CardTitle'
-
+import { Accordion, AccordionItem } from "@nextui-org/react"
+import { motion } from "framer-motion"
 
 export default function CallForPapers() {
   const [expandedTracks, setExpandedTracks] = useState([])
 
   const toggleTrack = (trackIndex) => {
-    setExpandedTracks(prev =>
+    setExpandedTracks((prev) =>
       prev.includes(trackIndex)
-        ? prev.filter(i => i !== trackIndex)
+        ? prev.filter((i) => i !== trackIndex)
         : [...prev, trackIndex]
     )
   }
@@ -126,53 +127,58 @@ export default function CallForPapers() {
   ]
 
   return (
-    <div className=" mx-auto px-4 py-8 bg-blue-50 mt-14"  id='callforpapers'>
-      <h1 className="text-4xl font-bold mb-6 text-center text-gray-900">Call for Papers</h1>
+    <div className="mx-auto px-4 py-8 bg-blue-50 mt-14" id="callforpapers">
+      <h1 className="text-4xl font-bold mb-6 text-center text-gray-900">
+        Call for Papers
+      </h1>
       <h2 className="text-2xl font-semibold mb-4 text-center text-gray-800">
         International Conference on Emerging Trends in Computational Techniques (ICETCT-2025)
       </h2>
       <Card className="mb-8 bg-white border border-gray-200 rounded-lg shadow">
         <CardHeader className="px-6 py-4 border-b border-gray-200">
-          <CardTitle className="text-xl font-semibold text-gray-800 ">Conference Overview</CardTitle>
+          <CardTitle className="text-xl font-semibold text-gray-800">
+            Conference Overview
+          </CardTitle>
         </CardHeader>
         <CardContent>
           <p className="text-gray-600">
-            The International Conference on Emerging Trends in Computational Techniques (ICETCT-2025) invites
-            researchers, scholars, industry professionals, and practitioners from across the globe to submit
-            their original and unpublished research papers. The conference will focus on advancements in
-            computational techniques with a particular emphasis on artificial intelligence, machine learning,
-            and other cutting-edge technologies. Accepted papers will be included in the Scopus Indexed
-            conference proceedings (Under Communication).
+            The International Conference on Emerging Trends in Computational
+            Techniques (ICETCT-2025) invites researchers, scholars, industry
+            professionals, and practitioners from across the globe to submit
+            their original and unpublished research papers. The conference will
+            focus on advancements in computational techniques with a particular
+            emphasis on artificial intelligence, machine learning, and other
+            cutting-edge technologies. Accepted papers will be included in the
+            Scopus Indexed conference proceedings (Under Communication).
           </p>
         </CardContent>
       </Card>
       <h3 className="text-xl font-semibold mb-4 text-gray-800">Conference Tracks</h3>
-      <div className="space-y-4">
+      <div className="w-4/5 max-w-full mx-auto px-6 py-8">
+      <Accordion>
         {tracks.map((track, index) => (
-          <Card key={index} className="bg-white border border-gray-200 rounded-lg shadow">
-            <CardHeader className="px-6 py-4 border-b border-gray-200">
-              <div className="flex justify-between items-center">
-                <CardTitle className="text-xl font-semibold text-gray-800 ">Track {index + 1}: {track.title}</CardTitle>
-                <Button
-                  onClick={() => toggleTrack(index)}
-                  aria-label={expandedTracks.includes(index) ? "Collapse track" : "Expand track"}
-                  className="px-3 py-2 rounded-md text-sm font-medium text-gray-600 hover:text-gray-800 hover:bg-gray-100"
-                >
-                  {expandedTracks.includes(index) ? "▲" : "▼"}
-                </Button>
-              </div>
-            </CardHeader>
-            {expandedTracks.includes(index) && (
-              <CardContent>
-                <ul className="list-disc pl-5 space-y-1">
-                  {track.topics.map((topic, topicIndex) => (
-                    <li key={topicIndex} className="text-gray-600">{topic}</li>
-                  ))}
-                </ul>
-              </CardContent>
-            )}
-          </Card>
+          <AccordionItem
+            key={index}
+            aria-label={track.title}
+            title={track.title}
+            className="shadow-md rounded-md px-4 "
+          >
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.5 }}
+            >
+              <ul className="list-inside list-disc space-y-2 pl-4">
+                {track.topics.map((topic, topicIndex) => (
+                  <li key={topicIndex} className="text-lg text-gray-800">
+                    {topic}
+                  </li>
+                ))}
+              </ul>
+            </motion.div>
+          </AccordionItem>
         ))}
+      </Accordion>
       </div>
     </div>
   )

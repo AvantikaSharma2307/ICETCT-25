@@ -28,6 +28,7 @@ const Hero = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
         className="z-50 flex flex-col justify-center items-center h-full"
+        id="home"
       >
         <motion.h1
           className="font-bold text-2xl sm:text-4xl md:text-6xl text-center text-white py-4"
