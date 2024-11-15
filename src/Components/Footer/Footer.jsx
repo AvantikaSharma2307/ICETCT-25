@@ -30,22 +30,22 @@ export default function Footer() {
           <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
           <ul className="space-y-2">
             <li>
-              <a href="#about" className="text-gray-400 hover:text-white">
+              <a href="#home" className="text-gray-400 hover:text-white">
                 About Us
               </a>
             </li>
             <li>
-              <a href="#services" className="text-gray-400 hover:text-white">
+              <a href="#submission" className="text-gray-400 hover:text-white">
                 Submissions
               </a>
             </li>
             <li>
-              <a href="#blog" className="text-gray-400 hover:text-white">
+              <a href="#registration" className="text-gray-400 hover:text-white">
                 Registrations
               </a>
             </li>
             <li>
-              <a href="#home" className="text-gray-400 hover:text-white">
+              <a href="#accomodation" className="text-gray-400 hover:text-white">
                 Accommodation
               </a>
             </li>
@@ -65,16 +65,16 @@ export default function Footer() {
         >
           <h3 className="text-4xl font-semibold mb-4">ICETCT&nbsp;&nbsp;2025</h3>
           <div className="flex space-x-4">
-            <a href="#" className="text-gray-400 hover:text-white">
+            <a href="https://www.facebook.com/kiet.edu" className="text-gray-400 hover:text-white">
               <FaFacebookF size={24} />
             </a>
-            <a href="#" className="text-gray-400 hover:text-white">
+            <a href="https://x.com/Kiet_edu" className="text-gray-400 hover:text-white">
               <FaTwitter size={24} />
             </a>
-            <a href="#" className="text-gray-400 hover:text-white">
+            <a href="https://www.instagram.com/kiet_edu/" className="text-gray-400 hover:text-white">
               <FaInstagram size={24} />
             </a>
-            <a href="#" className="text-gray-400 hover:text-white">
+            <a href="https://www.linkedin.com/school/kiet-group-of-institutions/posts/?feedView=all" className="text-gray-400 hover:text-white">
               <FaLinkedinIn size={24} />
             </a>
           </div>

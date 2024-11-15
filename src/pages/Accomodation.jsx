@@ -38,7 +38,7 @@ function Accomodation() {
         initial="hidden"
         whileInView="visible"
       >
-        <h1 className="text-3xl md:text-5xl font-bold text-black">Accommodation</h1>
+        <h1 className="text-3xl md:text-4xl font-bold text-black">Accommodation</h1>
       </motion.div>
 
       <motion.div
@@ -61,11 +61,11 @@ function Accomodation() {
           whileInView="animate"
         >
           <p className="text-gray-700 text-xl md:text-2xl">
-            Mr. ………………………….
+            Mr. Anurag Gupta (Asst.Prof.at KIET Group Of Institution,Delhi NCR,Ghaziabad )
             <br />
-            Phone: ………………………
+            Phone: +91 8439012485
             <br />
-            Email: ………………………
+            Email: anurag.gupta@kiet.edu
           </p>
         </motion.div>
 

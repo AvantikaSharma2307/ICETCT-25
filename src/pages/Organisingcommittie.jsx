@@ -18,7 +18,7 @@ function Organisingcommittie() {
   return (
     <div className="bg-blue-50 text-center px-4  mt-24 md:px-8" id="commities">
       <div className="my-8">
-        <div className="text-4xl font-bold mb-4">Organising Committee</div>
+        <div className="text-4xl font-bold mb-4 pt-16">Organising Committee</div>
 
         {/* Patron in Chief */}
         <div className="text-xl font-bold mb-4">Patron in Chief</div>
@@ -190,26 +190,18 @@ function Organisingcommittie() {
         {/* Certificate Committee */}
         <div className="text-xl font-bold mt-8 mb-4">Certificate Committee</div>
         <div className="flex flex-wrap justify-center gap-8">
-          <div className="w-full sm:w-2/6">
+          <div className="w-full sm:w-2/6 mb-14">
             <div>Ms. Nidhi Singh (Chair)</div>
             <div>Mr. Ashish Gaur (Co-Chair)</div>
           </div>
         </div>
 
         {/* Concluding Remarks */}
-        <div className="text-xl font-bold mt-8 mb-4">Concluding Remarks</div>
-        <div className="flex flex-wrap justify-center gap-8">
-          <div className="w-full sm:w-2/6">
-            <div>Prof. (Dr.) Rekha Kashyap</div>
-          </div>
-        </div>
+       
+       
 
         {/* Acknowledgement */}
-        <div className="text-xl font-bold mt-8 mb-4">Acknowledgement</div>
-        <div className="text-center">
-          <div>We thank our Sponsors and Partners for their generous support</div>
         </div>
-      </div>
     </div>
   )
 }

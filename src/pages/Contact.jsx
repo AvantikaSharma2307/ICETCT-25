@@ -33,7 +33,9 @@ function Contact() {
             }}
         className="mt-8">
           <p className="text-gray-600 text-center text-lg md:text-3xl font-semibold mb-20">
-            We will update it soon...
+            For any query/correspondance,please contact:<br></br>
+            Mr.Punnet Garg<br></br>
+            Email:puneet.garg@kiet.edu
           </p>
         </motion.h1>
     </>

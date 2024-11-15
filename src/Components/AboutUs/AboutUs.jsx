@@ -48,7 +48,7 @@ const AboutUs = () => {
         variants={headerVariants} 
         initial="hidden" 
         whileInView="visible"
-        className="text-center text-4xl font-bold mt-14 mb-14 text-cyan-600"
+        className="text-center text-4xl font-bold mt-14 mb-14 "
       >
         About ICETCT
       </motion.h1>

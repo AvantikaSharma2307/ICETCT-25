@@ -9,7 +9,7 @@ export default function PaperSubmission() {
           initial={{ opacity: 0, y: -50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ type: 'spring', stiffness: 100, damping: 25, delay: 0.2 }}
-          className="text-5xl font-bold text-center mb-12 text-black"
+          className="text-4xl font-bold text-center mb-12 text-black"
         >
           Paper Submission
         </motion.h1>

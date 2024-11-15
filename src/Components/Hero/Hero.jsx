@@ -8,10 +8,10 @@ import hero3 from "../../assets/hero.png";
 import hero4 from "../../assets/hero2.png";
 
 const subHeadings = [
-  "On May 30-31, 2025",
   "Organized by:",
   "Department of CSE-AI &",
-  "Department of CSE-AIML"
+  "Department of CSE-AIML",
+  "KIET Group Of Institutions,Delhi NCR,Ghaziabad"
 ];
 
 const Hero = () => {
@@ -37,7 +37,12 @@ const Hero = () => {
           <br />
           (ICETCT-2025)
         </motion.h1>
-
+        <motion.h2
+              className="font-semibold text-xl sm:text-3xl text-white"
+            >
+              On May 30-31, 2025
+            </motion.h2>
+            <br/><br/>
         <div className="text-center space-y-2">
           {subHeadings.map((text, index) => (
             <motion.h2

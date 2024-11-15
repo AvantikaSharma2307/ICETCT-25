@@ -8,7 +8,7 @@ function Registration() {
       <div className="text-white w-full min-h-screen flex flex-col justify-center">
         
         <motion.h1
-          className="pt-24 md:pt-36 text-4xl md:text-5xl font-bold text-black text-center"
+          className="pt-24 md:pt-36 text-3xl md:text-4xl font-bold text-black text-center"
           whileInView={{ opacity: 1, y: 0, scale: 1 }}
           initial={{ opacity: 0, y: -50, scale: 0.9 }}
           transition={{
