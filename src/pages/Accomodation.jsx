@@ -1,21 +1,65 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 
 function Accomodation() {
+  const containerVariants = {
+    hidden: { opacity: 0, x: '100%' }, 
+    visible: {
+      opacity: 1,
+      x: 0, 
+      transition: {
+        type: 'spring',
+        stiffness: 50,
+        damping: 25,
+      },
+    },
+  };
+
+  const bounceVariants = {
+    initial: { opacity: 0, x: '100%' }, 
+    animate: {
+      opacity: 1,
+      x: [0, -15, 10, 0], 
+      transition: {
+        type: 'spring',
+        stiffness: 80,
+        damping: 25,
+        duration: 1,
+        repeatType: 'reverse', 
+      },
+    },
+  };
+
   return (
     <div id="accomodation">
-      {/* Hero Section */}
-      <div className="text-center text-white w-full h-16">
-        <h1 className="text-3xl  md:text-5xl font-bold text-black">Accommodation</h1>
-      </div>
+      <motion.div
+        className="text-center text-white w-full h-16"
+        variants={containerVariants}
+        initial="hidden"
+        whileInView="visible"
+      >
+        <h1 className="text-3xl md:text-5xl font-bold text-black">Accommodation</h1>
+      </motion.div>
 
-      {/* Content Section */}
-      <div className="px-4 md:px-16">
+      <motion.div
+        className="px-4 md:px-16"
+        variants={containerVariants}
+        initial="hidden"
+        whileInView="visible"
+      >
         <p className="text-gray-600 text-center text-lg md:text-3xl font-semibold mt-4 md:mt-8">
           Limited rooms are available for participants/guests (on a payment basis).
           <br /> The availability of rooms will be on a First-Come, First-Serve basis.
           <br /> For more details, kindly contact the following person:
         </p>
-        <div className="mt-6 text-center">
+
+        <motion.div
+          className="mt-6 text-center"
+          variants={bounceVariants}
+          initial="initial"
+          animate="animate"
+          whileInView="animate"
+        >
           <p className="text-gray-700 text-xl md:text-2xl">
             Mr. ………………………….
             <br />
@@ -23,8 +67,9 @@ function Accomodation() {
             <br />
             Email: ………………………
           </p>
-        </div>
-      </div>
+        </motion.div>
+
+      </motion.div>
     </div>
   );
 }
