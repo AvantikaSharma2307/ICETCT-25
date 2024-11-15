@@ -113,7 +113,6 @@ export default function CallForPapers() {
 
   return (
     <div className="w-full mx-auto px-6 py-16 bg-gradient-to-br from-teal-100 via-blue-100 to-purple-200 mt-14" id="callforpapers">
-      {/* Main Section Animation */}
       <motion.div
         whileInView={{ opacity: 1 }}
         initial={{ opacity: 0 }}
@@ -138,7 +137,6 @@ export default function CallForPapers() {
           </motion.h2>
         </div>
 
-        {/* Conference Overview Section */}
         <motion.div
           whileInView={{ opacity: 1 }}
           initial={{ opacity: 0 }}
@@ -158,7 +156,6 @@ export default function CallForPapers() {
           </div>
         </motion.div>
 
-        {/* Conference Tracks Section */}
         <div className="mb-4 m-auto w-full">
           <motion.h3
             whileInView={{ opacity: 1, y: 0 }}
@@ -190,7 +187,7 @@ export default function CallForPapers() {
                           initial={{ opacity: 0, y: 20 }}
                           transition={{
                             duration: 0.4,
-                            delay: 0.2 + topicIndex * 0.1, // Slight stagger for each topic
+                            delay: 0.2 + topicIndex * 0.1, 
                           }}
                           className="text-lg"
                         >
