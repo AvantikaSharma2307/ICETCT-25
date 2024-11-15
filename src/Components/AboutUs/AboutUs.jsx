@@ -22,14 +22,6 @@ const AboutUs = () => {
     }
   };
 
-  const textLineVariants = {
-    hidden: { opacity: 0, y: 20 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: { type: "spring", stiffness: 100, damping: 30, duration: 5 } 
-    }
-  };
 
   const imageVariants = {
     hidden: { opacity: 0, scale: 0.9, rotate: -10 },
@@ -49,24 +41,6 @@ const AboutUs = () => {
     },
   };
 
-  const textContent = `
-    The International Conference on Emerging Trends in Computational Techniques (ICETCT-2025),
-    organized by the Department of Computer Science and Engineering – Artificial Intelligence (CSE-AI)
-    and the Department of Computer Science and Engineering – Artificial Intelligence & Machine Learning (CSE-AIML)
-    at KIET Group of Institutions, is a prestigious academic event scheduled for May 30-31, 2025.
-    
-    This international conference aims to provide a global platform for researchers, academicians, industry professionals,
-    and students to present and discuss their innovative ideas and cutting-edge research in the rapidly evolving fields of
-    computational techniques, artificial intelligence, and machine learning.
-    
-    ICETCT-2025 is dedicated to exploring the latest trends and developments in computational sciences, with a special focus
-    on AI, machine learning, data science, and other emerging technologies.
-    
-    The conference will cover a wide range of topics, including deep learning, natural language processing, computer vision,
-    big data analytics, IoT, Cyber Security, and AI applications across various industries.
-    By providing an interdisciplinary platform, ICETCT-2025 aims to bring together thought leaders from academia and industry
-    to share their insights and foster collaboration.
-  `;
 
   return (
     <div id="aboutus">
@@ -101,22 +75,61 @@ const AboutUs = () => {
           </motion.div>
         </motion.div>
 
-        <motion.div 
-          variants={containerVariants}
-          initial="hidden" 
-          whileInView="visible"
-          className="w-full sm:w-2/3 text-gray-700 text-lg sm:text-xl sm:ml-10"
-        >
-          {textContent.split("\n\n").map((block, index) => (
-            <motion.div
-              key={index}
-              variants={textLineVariants}
-              className="mb-6" 
-            >
-              {block}
-            </motion.div>
-          ))}
-        </motion.div>
+        <div className="w-full sm:w-2/3 text-gray-700 text-lg sm:text-xl sm:ml-10">
+          <motion.div>
+            <p>
+              {`The International Conference on Emerging Trends in Computational Techniques (ICETCT-2025), organized by the Department of Computer Science and Engineering – Artificial Intelligence (CSE-AI) and the Department of Computer Science and Engineering – Artificial Intelligence & Machine Learning (CSE-AIML) at KIET Group of Institutions, is a prestigious academic event scheduled for May 30-31, 2025. This international conference aims to provide a global platform for researchers, academicians, industry professionals, and students to present and discuss their innovative ideas and cutting-edge research in the rapidly evolving fields of computational techniques, artificial intelligence, and machine learning.`.split(" ").map((word, index) => (
+                <motion.span
+                  key={index}
+                  whileInView={{
+                    filter: "blur(0px)",
+                    opacity: 1,
+                    y: 0,
+                  }}
+                  initial={{
+                    filter: "blur(10px)",
+                    opacity: 0,
+                    y: 5,
+                  }}
+                  transition={{
+                    duration: 0.5,
+                    ease: "easeInOut",
+                    delay: 0.03 * index,
+                  }}
+                  className="inline-block"
+                >
+                  {word}&nbsp;
+                </motion.span>
+              ))}
+            </p>
+
+            <p>
+              {`ICETCT-2025 is dedicated to exploring the latest trends and developments in computational sciences, with a special focus on AI, machine learning, data science, and other emerging technologies. The conference will cover a wide range of topics, including deep learning, natural language processing, computer vision, big data analytics, IoT, Cyber Security, and AI applications across various industries. By providing an interdisciplinary platform, ICETCT-2025 aims to bring together thought leaders from academia and industry to share their insights and foster collaboration.`.split(" ").map((word, index) => (
+                <motion.span
+                  key={index}
+                  whileInView={{
+                    filter: "blur(0px)",
+                    opacity: 1,
+                    y: 0,
+                  }}
+                  initial={{
+                    filter: "blur(10px)",
+                    opacity: 0,
+                    y: 5,
+                  }}
+                  transition={{
+                    duration: 0.5,
+                    ease: "easeInOut",
+                    delay: 0.03 * index,
+                  }}
+                  className="inline-block"
+                >
+                  {word}&nbsp;
+                </motion.span>
+              ))}
+            </p>
+          </motion.div>
+        </div>
       </motion.div>
     </div>
   );
