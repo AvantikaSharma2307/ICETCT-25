@@ -33,13 +33,13 @@ const Navbar = () => {
       </motion.div>
 
       <div className="hidden md:flex justify-center space-x-8 m-2 ">
-        {["Home", "Call For Papers", "Submission", "Registration", "Accomodation", "Speaker", "Commities", "Contact"].map((item) => (
+        {["","Home", "Call For Papers", "Submission", "Registration", "Accomodation", "Speaker", "Commities", "Contact",""].map((item, index) => (
           <motion.li
             key={item}
             className="hover:text-orange-700 list-none m-2 hover:scale-105 hover:text-lg hover:font-bold transition-all duration-300"
             initial={{ opacity: 0, y: -100 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ type: "spring", stiffness: 100, damping: 10, delay: 0.2 }}
+            transition={{  type: "spring", stiffness: 100, damping: 10, delay: index * 0.2 }}
           >
             <a href={`#${item.toLowerCase().replace(/\s+/g, '')}`}>{item}</a>
           </motion.li>
