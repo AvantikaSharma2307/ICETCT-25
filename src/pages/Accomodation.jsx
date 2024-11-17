@@ -61,7 +61,7 @@ function Accomodation() {
           whileInView="animate"
         >
           <p className="text-gray-700 text-xl md:text-2xl">
-            Mr. Anurag Gupta (Asst.Prof.at KIET Group Of Institution,Delhi NCR,Ghaziabad )
+           <strong> Mr. Anurag Gupta</strong><br/> (Asst.Prof.at KIET Group Of Institution,Delhi-NCR,Ghaziabad )
             <br />
             Phone: +91 8439012485
             <br />

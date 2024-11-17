@@ -50,7 +50,7 @@ function Organisingcommittie() {
           <div className="w-full sm:w-2/6">
             <div>Dr. Anil Ahlawat</div>
             <div>Dean Academics</div>
-            <div>KIET Group of Institutions, Delhi NCR, Ghaziabad</div>
+            <div>KIET Group of Institutions, Delhi-NCR, Ghaziabad</div>
           </div>
         </div>
 
