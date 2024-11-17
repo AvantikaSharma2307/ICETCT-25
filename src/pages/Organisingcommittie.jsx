@@ -68,7 +68,7 @@ function Organisingcommittie() {
           </div>
         </div>
         {/* Convenor */}
-        <div className="text-xl font-bold mt-8 mb-4">Conference Chair</div>
+        <div className="text-xl font-bold mt-8 mb-4">Convener</div>
         <div className="w-full sm:w-2/6 mx-auto text-xl">
           <div className="text-center">
             <div>Dr.Puneet Garg</div>
