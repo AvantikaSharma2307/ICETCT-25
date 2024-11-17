@@ -33,7 +33,7 @@ const Navbar = () => {
       </motion.div>
 
       <div className="hidden md:flex justify-center space-x-8 m-2 ">
-        {["","Home", "Call For Papers", "Submission", "Registration", "Accomodation", "Speaker", "Commities", "Contact",""].map((item, index) => (
+        {["","Home", "Call For Papers", "Submission", "Registration", "Accomodation", "Speaker", "Committees", "Contact",""].map((item, index) => (
           <motion.li
             key={item}
             className="hover:text-orange-700 list-none m-2 hover:scale-105 hover:text-lg hover:font-bold transition-all duration-300"
@@ -59,7 +59,7 @@ const Navbar = () => {
           y: { type: "spring", stiffness: 50, damping: 25 },
         }}
       >
-        {["Home", "Call For Papers", "Submission", "Registration", "Accomodation", "Speaker", "Commities", "Contact"].map((item, index) => (
+        {["Home", "Call For Papers", "Submission", "Registration", "Accomodation", "Speaker", "Committees", "Contact"].map((item, index) => (
           <motion.li
             key={item}
             className="hover:text-orange-700 hover:scale-105 hover:font-bold transition-all duration-300"

@@ -22,12 +22,16 @@ function Organisingcommittie() {
 
         {/* Patron in Chief */}
         <div className="text-xl font-bold mb-4">Patron in Chief</div>
-        <div className="flex flex-wrap justify-center gap-8">
+        <div className="flex flex-wrap justify-center gap-8 text-xl">
           <div className="w-full sm:w-2/6">
-            <div>Shri Sarish Agarwal</div>
+            <div >Shri Sarish Agarwal</div>
             <div>Honourable Chairman</div>
-            <div>KIET Group of Institutions</div>
+            <div>KIET Group of Institutions,Delhi-NCR,Ghaziabad</div>
           </div>
+        </div>
+        {/* Patron */}
+        <div className="text-xl font-bold mb-4 mt-8">Patron </div>
+        <div className="flex flex-wrap justify-center gap-8 text-xl">
           <div className="w-full sm:w-2/6">
             <div>Prof. (Dr.) Preeti Bajaj</div>
             <div>Director General</div>
@@ -37,11 +41,11 @@ function Organisingcommittie() {
 
         {/* General Chair */}
         <div className="text-xl font-bold mt-8 mb-4">General Chair</div>
-        <div className="flex flex-wrap justify-center gap-8">
+        <div className="flex flex-wrap justify-center gap-8 text-xl">
           <div className="w-full sm:w-2/6">
             <div>Dr. Manoj Goel</div>
             <div>Joint Director</div>
-            <div>KIET Group of Institutions</div>
+            <div>KIET Group of Institutions,Delhi-NCR,Ghaziabad</div>
           </div>
           <div className="w-full sm:w-2/6">
             <div>Dr. Anil Ahlawat</div>
@@ -52,7 +56,7 @@ function Organisingcommittie() {
 
         {/* Conference Chair */}
         <div className="text-xl font-bold mt-8 mb-4">Conference Chair</div>
-        <div className="w-full sm:w-2/6 mx-auto">
+        <div className="w-full sm:w-2/6 mx-auto text-xl">
           <div className="text-center">
             <div>Prof. (Dr.) Rekha Kashyap</div>
             <div>
@@ -60,13 +64,26 @@ function Organisingcommittie() {
               <br />
               Department of CSE-AI and Department of CSE-AIML
             </div>
-            <div>KIET Group of Institutions</div>
+            <div>KIET Group of Institutions,Delhi-NCR,Ghaziabad</div>
+          </div>
+        </div>
+        {/* Convenor */}
+        <div className="text-xl font-bold mt-8 mb-4">Conference Chair</div>
+        <div className="w-full sm:w-2/6 mx-auto text-xl">
+          <div className="text-center">
+            <div>Dr.Puneet Garg</div>
+            <div>
+            Associate Professor,
+              <br />
+              Department of CSE-AI 
+            </div>
+            <div>KIET Group of Institutions,Delhi-NCR,Ghaziabad</div>
           </div>
         </div>
 
         {/* Technical Program Committee */}
         <div className="text-xl font-bold mt-8 mb-4">Technical Program Committee</div>
-        <div className="flex flex-wrap justify-center gap-8">
+        <div className="flex flex-wrap justify-center gap-8 text-xl">
           <div className="w-full sm:w-2/6">
             <div>Ms. Nidhi Singh (Chair)</div>
             <div>Ms. Preeti Verma (Co-Chair)</div>
@@ -77,7 +94,7 @@ function Organisingcommittie() {
 
         {/* Publication Committee */}
         <div className="text-xl font-bold mt-8 mb-4">Publication Committee</div>
-        <div className="flex flex-wrap justify-center gap-8">
+        <div className="flex flex-wrap justify-center gap-8 text-xl">
           <div className="w-full sm:w-2/6">
             <div>Ms. Umang Kant (Chair)</div>
             <div>Ms. Kavya Gupta (Co-Chair)</div>
@@ -87,7 +104,7 @@ function Organisingcommittie() {
 
         {/* Event Management Committee */}
         <div className="text-xl font-bold mt-8 mb-4">Event Management Committee</div>
-        <div className="flex flex-wrap justify-center gap-8">
+        <div className="flex flex-wrap justify-center gap-8 text-xl">
           <div className="w-full sm:w-2/6">
             <div>Ms. Bhawna (Chair)</div>
             <div>Ms. Akanksha (Co-Chair)</div>
@@ -97,7 +114,7 @@ function Organisingcommittie() {
 
         {/* Publicity Committee */}
         <div className="text-xl font-bold mt-8 mb-4">Publicity Committee</div>
-        <div className="flex flex-wrap justify-center gap-8">
+        <div className="flex flex-wrap justify-center gap-8 text-xl">
           <div className="w-full sm:w-2/6">
             <div>Mr. Bhuvnesh Malik (Chair)</div>
           </div>
@@ -105,7 +122,7 @@ function Organisingcommittie() {
 
         {/* Local Arrangement Committee */}
         <div className="text-xl font-bold mt-8 mb-4">Local Arrangement Committee</div>
-        <div className="flex flex-wrap justify-center gap-8">
+        <div className="flex flex-wrap justify-center gap-8 text-xl">
           <div className="w-full sm:w-2/6">
             <div>Mr. Anurag Gupta (Chair)</div>
             <div>Mr. Ajay Singh (Co-Chair)</div>
@@ -116,7 +133,7 @@ function Organisingcommittie() {
 
         {/* Finance Committee */}
         <div className="text-xl font-bold mt-8 mb-4">Finance Committee</div>
-        <div className="flex flex-wrap justify-center gap-8">
+        <div className="flex flex-wrap justify-center gap-8 text-xl">
           <div className="w-full sm:w-2/6">
             <div>Ms. Kumud Alok (Chair)</div>
             <div>Mr. Rachit Patel (Co-Chair)</div>
@@ -125,7 +142,7 @@ function Organisingcommittie() {
 
         {/* Registration Committee */}
         <div className="text-xl font-bold mt-8 mb-4">Registration Committee</div>
-        <div className="flex flex-wrap justify-center gap-8">
+        <div className="flex flex-wrap justify-center gap-8 text-xl">
           <div className="w-full sm:w-2/6">
             <div>Ms. Ruchika Mavis Daniel (Chair)</div>
             <div>Ms. Gargi Singh (Co-Chair)</div>
@@ -135,7 +152,7 @@ function Organisingcommittie() {
 
         {/* Other Committees */}
         <div className="text-xl font-bold mt-8 mb-4">Technical Session/Speaker Committee</div>
-        <div className="flex flex-wrap justify-center gap-8">
+        <div className="flex flex-wrap justify-center gap-8 text-xl">
           <div className="w-full sm:w-2/6">
             <div>Dr. Puneet Garg (Chair)</div>
             <div>Dr. Gaurav Srivastav (Co-Chair)</div>
@@ -143,7 +160,7 @@ function Organisingcommittie() {
         </div>
 
         <div className="text-xl font-bold mt-8 mb-4">Sponsorship Committee</div>
-        <div className="flex flex-wrap justify-center gap-8">
+        <div className="flex flex-wrap justify-center gap-8 text-xl">
           <div className="w-full sm:w-2/6">
             <div>Dr. Puneet Garg (Chair)</div>
             <div>Ms. Payal Chhabra (Member)</div>
@@ -153,7 +170,7 @@ function Organisingcommittie() {
         </div>
 
         <div className="text-xl font-bold mt-8 mb-4">Media Management Committee</div>
-        <div className="flex flex-wrap justify-center gap-8">
+        <div className="flex flex-wrap justify-center gap-8 text-xl">
           <div className="w-full sm:w-2/6">
             <div>Ms. Aastha Gupta (Chair)</div>
             <div>Mr. Shivansh Prasad (Co-Chair)</div>
@@ -161,7 +178,7 @@ function Organisingcommittie() {
         </div>
 
         <div className="text-xl font-bold mt-8 mb-4">Abstract Book/Conference Proceedings</div>
-        <div className="flex flex-wrap justify-center gap-8">
+        <div className="flex flex-wrap justify-center gap-8 text-xl">
           <div className="w-full sm:w-2/6">
             <div>Ms. Richa Singh (Chair)</div>
             <div>Mr. Deepak Tripathi (Co-Chair)</div>
@@ -171,7 +188,7 @@ function Organisingcommittie() {
 
         {/* Website Management Committee */}
         <div className="text-xl font-bold mt-8 mb-4">Website Management Committee</div>
-        <div className="flex flex-wrap justify-center gap-8">
+        <div className="flex flex-wrap justify-center gap-8 text-xl">
           <div className="w-full sm:w-2/6">
             <div>Mr. Rajeev Kumar Singh (Chair)</div>
           </div>
@@ -179,7 +196,7 @@ function Organisingcommittie() {
 
         {/* Registration Kit/Memento Committee */}
         <div className="text-xl font-bold mt-8 mb-4">Registration Kit/Memento Committee</div>
-        <div className="flex flex-wrap justify-center gap-8">
+        <div className="flex flex-wrap justify-center gap-8 text-xl">
           <div className="w-full sm:w-2/6">
             <div>Mr. Nagendra Nath Dubey (Chair)</div>
             <div>Mr. Sahil Bhatia (Co-Chair)</div>
@@ -189,7 +206,7 @@ function Organisingcommittie() {
 
         {/* Certificate Committee */}
         <div className="text-xl font-bold mt-8 mb-4">Certificate Committee</div>
-        <div className="flex flex-wrap justify-center gap-8">
+        <div className="flex flex-wrap justify-center gap-8 text-xl">
           <div className="w-full sm:w-2/6 mb-14">
             <div>Ms. Nidhi Singh (Chair)</div>
             <div>Mr. Ashish Gaur (Co-Chair)</div>

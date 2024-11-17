@@ -44,6 +44,30 @@ const AboutUs = () => {
 
   return (
     <div id="aboutus">
+      {/* <marquee  direction="left" scrollamount="10" loop="infinite">
+  <div className="flex flex-row gap-5 mt-16">
+    <img src="https://www.kiet.edu/uploads/gallery/sub_gallary/738983416.jpg" alt="KIET"/>
+    <img src="https://www.kiet.edu/uploads/gallery/sub_gallary/941528379.jpg" alt="KIET"/>
+    <img src="https://www.kiet.edu/uploads/gallery/sub_gallary/440826975.jpg" alt="KIET"/>
+    <img src="https://www.kiet.edu/uploads/gallery/sub_gallary/831756760.jpg" alt="KIET"/>
+    <img src="https://www.kiet.edu/uploads/gallery/sub_gallary/479675813.jpg" alt="KIET"/>
+    <img src="https://www.kiet.edu/uploads/gallery/sub_gallary/553833454.jpg" alt="KIET"/>
+    <img src="https://www.kiet.edu/uploads/gallery/sub_gallary/july2020_018.jpg" alt="KIET"/>
+  </div>
+</marquee>
+
+<marquee behavior="scroll" direction="right" scrollamount="15">
+  <div className="flex flex-row gap-5 mt-16">
+    <img src="https://www.kiet.edu/uploads/gallery/sub_gallary/738983416.jpg" alt="KIET"/>
+    <img src="https://www.kiet.edu/uploads/gallery/sub_gallary/941528379.jpg" alt="KIET"/>
+    <img src="https://www.kiet.edu/uploads/gallery/sub_gallary/440826975.jpg" alt="KIET"/>
+    <img src="https://www.kiet.edu/uploads/gallery/sub_gallary/831756760.jpg" alt="KIET"/>
+    <img src="https://www.kiet.edu/uploads/gallery/sub_gallary/479675813.jpg" alt="KIET"/>
+    <img src="https://www.kiet.edu/uploads/gallery/sub_gallary/553833454.jpg" alt="KIET"/>
+    <img src="https://www.kiet.edu/uploads/gallery/sub_gallary/july2020_018.jpg" alt="KIET"/>
+  </div>
+</marquee> */}
+
       <motion.h1 
         variants={headerVariants} 
         initial="hidden" 
