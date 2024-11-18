@@ -166,12 +166,18 @@ export default function CallForPapers() {
             Conference Tracks
           </motion.h3>
           <div className="w-full max-w-screen-xl mx-auto px-6 py-8">
-            <Accordion aria-label="Conference Tracks" className="space-y-4 m-auto w-full">
-              {tracks.map((track, index) => (
+            <Accordion aria-label="Conference Tracks" className="space-y-4 m-auto w-full ">
+              
+              {tracks.map((track, index) => {
+                const [boldPart, normalPart] = track.title.split(': ');
+                return(
                 <AccordionItem
                   key={index}
                   aria-label={track.title}
-                  title={track.title}
+                  title={ <span>
+                    <span className="font-bold">{boldPart}: </span>
+                    {normalPart}
+                  </span>}
                   className="bg-white shadow-lg rounded-lg p-2 px-4 m-2 transition-all duration-300 hover:shadow-xl hover:bg-gradient-to-br hover:from-teal-100 hover:to-blue-100"
                 >
                   <motion.div
@@ -197,7 +203,7 @@ export default function CallForPapers() {
                     </ul>
                   </motion.div>
                 </AccordionItem>
-              ))}
+              )})}
             </Accordion>
           </div>
         </div>

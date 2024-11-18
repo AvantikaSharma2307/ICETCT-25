@@ -2,6 +2,11 @@ import React, { useEffect, useState } from "react";
 import "./Navbar.css";
 import AnimatedHamburgerButton from "./AnimatedHamburgerButton";
 import { motion } from "framer-motion";
+import Image1 from "../../assets/440826975-removebg-preview.png";
+import Image2 from "../../assets/784851290-removebg-preview.png";
+import Image3 from "../../assets/831756760-removebg-preview.png";
+import Image4 from "../../assets/941528379-removebg-preview.png";
+import Image5 from "../../assets/logo-removebg-preview.png";
 
 const Navbar = () => {
   const [sticky, setSticky] = useState(false);
@@ -29,10 +34,18 @@ const Navbar = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ type: "spring", stiffness: 100, damping: 10, delay: 0.2 }}
       >
-        <img src="image.png" alt="Logo" />
+       <div className=" flex items-center justify-start gap-2 leading-none">
+           <img src="image.png" alt="Logo" className="w-32 h-8" />
+             <img src={Image1} alt="Logo" className="w-16 h-16" />
+             <img src={Image2} alt="Logo" className="w-16" />
+             <img src={Image3} alt="Logo" className="w-16" />
+             <img src={Image4} alt="Logo" className="w-16" />
+             <img src={Image5} alt="Logo" className="w-14 h-12" />
+          </div>
+
       </motion.div>
 
-      <div className="hidden md:flex justify-center space-x-8 m-2 ">
+      <div className="hidden md:flex justify-center space-x-6 m-2 ">
         {["","Home", "Call For Papers", "Submission", "Registration", "Accomodation", "Speaker", "Committees", "Contact",""].map((item, index) => (
           <motion.li
             key={item}

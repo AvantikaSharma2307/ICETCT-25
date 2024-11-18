@@ -26,7 +26,7 @@ function Speaker() {
         viewport={{ once: false }} 
       >
         <h1 className="mt-16 text-3xl md:text-4xl font-bold text-black">
-          Speakers
+          Speaker's
         </h1>
       </motion.div>
 

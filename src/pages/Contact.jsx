@@ -15,7 +15,7 @@ function Contact() {
               damping: 10,
               delay:0.2,
             }}
-            className="text-2xl text-center sm:text-4xl font-semibold">
+            className="text-2xl text-center sm:text-4xl font-semibold" id="contact">
               <h1 className="pt-16 md:pt-36 text-black text-3xl md:text-4xl font-bold">
           Contact Us
         </h1>
