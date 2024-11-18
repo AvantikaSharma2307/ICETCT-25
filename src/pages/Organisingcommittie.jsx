@@ -16,7 +16,7 @@ function Organisingcommittie() {
   };
 
   return (
-    <div className="bg-blue-50 text-center px-4  mt-24 md:px-8" id="commities">
+    <div className="bg-blue-50 text-center px-4  mt-24 md:px-8" id="committees">
       <div className="my-8">
         <div className="text-4xl font-bold mb-4 pt-16">Organising Committee</div>
 

@@ -25,7 +25,7 @@ function Speaker() {
         whileInView="visible" 
         viewport={{ once: false }} 
       >
-        <h1 className="mt-16 text-3xl md:text-4xl font-bold text-black">
+        <h1 className="mt-16 text-3xl md:text-4xl font-bold text-black" id="speaker">
           Speaker's
         </h1>
       </motion.div>

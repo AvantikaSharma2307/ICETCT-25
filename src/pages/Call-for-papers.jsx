@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 export default function CallForPapers() {
   const tracks = [
     {
-      title: 'Artificial Intelligence and Machine Learning',
+      title: 'Track 1: Artificial Intelligence and Machine Learning',
       topics: [
         'Deep Learning and Neural Networks',
         'Reinforcement Learning',
