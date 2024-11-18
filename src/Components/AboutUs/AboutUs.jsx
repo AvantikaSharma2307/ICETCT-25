@@ -26,7 +26,7 @@ const AboutUs = () => {
     hidden: { opacity: 0, scale: 0.9, rotate: -10 },
     visible: {
       opacity: 1,
-      scale: 1,
+      scale: 1.3,
       rotate: 0,
       transition: { type: "spring", stiffness: 100, damping: 20, delay: 0.6 }
     }
@@ -79,13 +79,15 @@ const AboutUs = () => {
               scale: 1.05, 
               transition: { type: "spring", stiffness: 200, damping: 10 }
             }}
-            className="bg-gray-300 rounded-lg p-6"
-          >
-            Photo
+            className=" rounded-lg "
+          > <div className="justify-center pt-16">
+            <img src="https://www.kiet.edu/uploads/media/multiple_image_upload/3051433.JPG"/>
+              {/* <img src="https://www.kiet.edu/uploads/media/multiple_image_upload/7924940.JPG" /> */}
+            </div>
           </motion.div>
         </motion.div>
 
-        <div className="w-full sm:w-2/3 text-gray-700 text-lg sm:text-xl sm:ml-10">
+        <div className="w-full sm:w-2/3 text-gray-700  text-lg sm:text-xl sm:ml-10 ">
           <motion.div>
             <p className="text-justify max-w-full sm:max-w-3xl mx-auto">
               {`The International Conference on Emerging Trends in Computational Techniques (ICETCT-2025), organized by the Department of Computer Science and Engineering – Artificial Intelligence (CSE-AI) and the Department of Computer Science and Engineering – Artificial Intelligence & Machine Learning (CSE-AIML) at KIET Group of Institutions, is a prestigious academic event scheduled for May 30-31, 2025. This international conference aims to provide a global platform for researchers, academicians, industry professionals, and students to present and discuss their innovative ideas and cutting-edge research in the rapidly evolving fields of computational techniques, artificial intelligence, and machine learning.`.split(" ").map((word, index) => (
