@@ -60,7 +60,7 @@ const AboutUs = () => {
         whileInView="visible"
         className="text-center text-4xl font-bold mt-14 mb-14 "
       >
-        About ICETCT
+        About ICETCT-2025
       </motion.h1>
 
       <motion.div 
@@ -81,8 +81,8 @@ const AboutUs = () => {
             }}
             className=" rounded-lg "
           > <div className="justify-center pt-16">
-            <img src="https://www.kiet.edu/uploads/media/multiple_image_upload/3051433.JPG"/>
-              {/* <img src="https://www.kiet.edu/uploads/media/multiple_image_upload/7924940.JPG" /> */}
+            {/* <img src="https://www.kiet.edu/uploads/media/multiple_image_upload/3051433.JPG"/> */}
+              <img src="http://everything-pr.com/wp-content/uploads/2015/10/PR-Conference.jpg" />
             </div>
           </motion.div>
         </motion.div>

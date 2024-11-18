@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import ResponsiveTable from '../Components/ResponsiveTable';
+import './Registration.css';
 
 function Registration() {
   return (
@@ -88,6 +89,13 @@ function Registration() {
             <ResponsiveTable />
           </motion.div>
         </motion.div>
+        
+<button className="button w-44">
+    <span className="button_lg">
+        <span className="button_sl"></span>
+        <span className="button_text ">Pay Now</span>
+    </span>
+</button>
       </div>
     </div>
   );
