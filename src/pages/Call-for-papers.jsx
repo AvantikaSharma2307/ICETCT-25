@@ -20,7 +20,7 @@ export default function CallForPapers() {
       ],
     },
     {
-      title: 'Data Science and Big Data Analytics',
+      title: 'Track 2: Data Science and Big Data Analytics',
       topics: [
         'Predictive Modeling',
         'Big Data Frameworks and Platforms (Hadoop, Spark)',
@@ -35,7 +35,7 @@ export default function CallForPapers() {
       ],
     },
     {
-      title: 'Internet of Things (IoT) and Smart Systems',
+      title: 'Track 3: Internet of Things (IoT) and Smart Systems',
       topics: [
         'IoT Architectures and Frameworks',
         'Smart Cities and Infrastructure',
@@ -50,7 +50,7 @@ export default function CallForPapers() {
       ],
     },
     {
-      title: 'Cybersecurity and Cryptography',
+      title: 'Track 4: Cybersecurity and Cryptography',
       topics: [
         'Cryptography and Encryption Techniques',
         'Intrusion Detection and Prevention Systems',
@@ -65,7 +65,7 @@ export default function CallForPapers() {
       ],
     },
     {
-      title: 'Natural Language Processing (NLP) and Speech Recognition',
+      title: 'Track 5: Natural Language Processing (NLP) and Speech Recognition',
       topics: [
         'Language Models and Transformers',
         'Machine Translation',
@@ -80,7 +80,7 @@ export default function CallForPapers() {
       ],
     },
     {
-      title: 'Computer Vision and Image Processing',
+      title: 'Track 6: Computer Vision and Image Processing',
       topics: [
         'Image Classification and Segmentation',
         'Object Detection and Tracking',
@@ -95,7 +95,7 @@ export default function CallForPapers() {
       ],
     },
     {
-      title: 'Interdisciplinary Research',
+      title: 'Track 7: Interdisciplinary Research',
       topics: [
         'AI in Healthcare and Bioinformatics',
         'Computational Social Sciences',
@@ -166,12 +166,18 @@ export default function CallForPapers() {
             Conference Tracks
           </motion.h3>
           <div className="w-full max-w-screen-xl mx-auto px-6 py-8">
-            <Accordion aria-label="Conference Tracks" className="space-y-4 m-auto w-full">
-              {tracks.map((track, index) => (
+            <Accordion aria-label="Conference Tracks" className="space-y-4 m-auto w-full ">
+              
+              {tracks.map((track, index) => {
+                const [boldPart, normalPart] = track.title.split(': ');
+                return(
                 <AccordionItem
                   key={index}
                   aria-label={track.title}
-                  title={track.title}
+                  title={ <span>
+                    <span className="font-bold">{boldPart}: </span>
+                    {normalPart}
+                  </span>}
                   className="bg-white shadow-lg rounded-lg p-2 px-4 m-2 transition-all duration-300 hover:shadow-xl hover:bg-gradient-to-br hover:from-teal-100 hover:to-blue-100"
                 >
                   <motion.div
@@ -197,7 +203,7 @@ export default function CallForPapers() {
                     </ul>
                   </motion.div>
                 </AccordionItem>
-              ))}
+              )})}
             </Accordion>
           </div>
         </div>
