@@ -1,19 +1,6 @@
 import React from 'react';
 
 function Organisingcommittie() {
-  const fadeInUpVariants = {
-    hidden: { opacity: 0, y: 50 }, 
-    visible: {
-      opacity: 1,
-      y: 1, 
-      transition: {
-        type: 'spring',
-        stiffness: 100,
-        damping: 25,
-        delay: 0.2, 
-      },
-    },
-  };
 
   return (
     <div className="bg-blue-50 text-center px-4  mt-24 md:px-8" id="committees">
