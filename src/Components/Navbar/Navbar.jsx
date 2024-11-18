@@ -34,18 +34,20 @@ const Navbar = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ type: "spring", stiffness: 100, damping: 10, delay: 0.2 }}
       >
-       <div className=" flex items-center justify-start gap-2 leading-none">
-           <img src="image.png" alt="Logo" className="w-32 h-8" />
-             <img src={Image1} alt="Logo" className="w-16 h-16" />
-             <img src={Image2} alt="Logo" className="w-16" />
-             <img src={Image3} alt="Logo" className="w-16" />
-             <img src={Image4} alt="Logo" className="w-16" />
-             <img src={Image5} alt="Logo" className="w-14 h-12" />
-          </div>
+        <div className="flex items-center justify-start gap-2 leading-none">
+     
+          <img src="image.png" alt="Logo" className="m-2 w-42 h-10" />
 
+          <img src={Image1} alt="Logo" className="hidden md:block w-16 h-16" />
+          <img src={Image2} alt="Logo" className="hidden md:block w-16" />
+          <img src={Image3} alt="Logo" className="hidden md:block w-16" />
+          <img src={Image4} alt="Logo" className="hidden md:block w-16" />
+          <img src={Image5} alt="Logo" className="hidden md:block w-14 h-12" />
+        </div>
       </motion.div>
 
-      <div className="hidden md:flex justify-center space-x-6 m-2 ">
+
+      <div className="hidden lg:flex justify-center space-x-6 m-2 ">
         {["","Home", "Call For Papers", "Submission", "Registration", "Accomodation", "Speaker", "Committees", "Contact",""].map((item, index) => (
           <motion.li
             key={item}
@@ -60,7 +62,7 @@ const Navbar = () => {
       </div>
 
       <motion.ul
-        className={`md:hidden ${mobileMenu ? "mobile-menu" : "hidden"}`}
+        className={`lg:hidden ${mobileMenu ? "mobile-menu" : "hidden"}`}
         onClick={toggleMenu}
         initial={{ opacity: 0, y: -50 }}
         animate={{
@@ -91,7 +93,7 @@ const Navbar = () => {
       </motion.ul>
 
       <motion.div
-        className="md:hidden cursor-pointer z-10"
+        className="lg:hidden cursor-pointer z-10"
         onClick={toggleMenu}
         initial={{ opacity: 0, y: -100 }}
         animate={{ opacity: 1, y: 0 }}
