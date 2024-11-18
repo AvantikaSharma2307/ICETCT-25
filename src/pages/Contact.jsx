@@ -34,7 +34,7 @@ function Contact() {
         className="mt-8">
           <p className="text-gray-600 text-center text-xl md:text-3xl font-semibold ">
             For any query/correspondance,please contact:<br></br></p>
-            <p className="text-gray-700 text-xl text-center md:text-2xl mb-20"><strong>Mr.Puneet Garg</strong><br></br>(Associate Professor,Department of CSE-AI)<br/>
+            <p className="text-gray-700 text-xl text-center md:text-2xl mb-20"><strong>Dr. Puneet Garg</strong><br></br>(Associate Professor,Department of CSE-AI)<br/>
             Phone:+91 9996091999<br/>
             Email:puneet.garg@kiet.edu
           </p>

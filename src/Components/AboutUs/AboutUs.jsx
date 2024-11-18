@@ -60,7 +60,7 @@ const AboutUs = () => {
         whileInView="visible"
         className="text-center text-4xl font-bold mt-14 mb-14 "
       >
-        About ICETCT
+        About ICETCT-2025
       </motion.h1>
 
       <motion.div 
@@ -87,7 +87,7 @@ const AboutUs = () => {
           </motion.div>
         </motion.div>
 
-        <div className="w-full sm:w-2/3 text-gray-700  text-lg sm:text-xl sm:ml-10 ">
+        <div className="w-full sm:w-2/3 text-gray-700  text-lg sm:text-xl sm:ml-10  ">
           <motion.div>
             <p className="text-justify max-w-full sm:max-w-3xl mx-auto">
               {`The International Conference on Emerging Trends in Computational Techniques (ICETCT-2025), organized by the Department of Computer Science and Engineering – Artificial Intelligence (CSE-AI) and the Department of Computer Science and Engineering – Artificial Intelligence & Machine Learning (CSE-AIML) at KIET Group of Institutions, is a prestigious academic event scheduled for May 30-31, 2025. This international conference aims to provide a global platform for researchers, academicians, industry professionals, and students to present and discuss their innovative ideas and cutting-edge research in the rapidly evolving fields of computational techniques, artificial intelligence, and machine learning.`.split(" ").map((word, index) => (
@@ -115,7 +115,7 @@ const AboutUs = () => {
               ))}
             </p>
 
-            <p className="text-justify max-w-full sm:max-w-3xl mx-auto">
+            <p className="text-justify  max-w-full sm:max-w-3xl mx-auto">
               {`ICETCT-2025 is dedicated to exploring the latest trends and developments in computational sciences, with a special focus on AI, machine learning, data science, and other emerging technologies. The conference will cover a wide range of topics, including deep learning, natural language processing, computer vision, big data analytics, IoT, Cyber Security, and AI applications across various industries. By providing an interdisciplinary platform, ICETCT-2025 aims to bring together thought leaders from academia and industry to share their insights and foster collaboration.`.split(" ").map((word, index) => (
                 <motion.span
                   key={index}

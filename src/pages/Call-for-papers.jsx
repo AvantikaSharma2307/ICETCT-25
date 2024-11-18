@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 export default function CallForPapers() {
   const tracks = [
     {
-      title: 'Artificial Intelligence and Machine Learning',
+      title: 'Track 1: Artificial Intelligence and Machine Learning',
       topics: [
         'Deep Learning and Neural Networks',
         'Reinforcement Learning',
@@ -20,7 +20,7 @@ export default function CallForPapers() {
       ],
     },
     {
-      title: 'Data Science and Big Data Analytics',
+      title: 'Track 2: Data Science and Big Data Analytics',
       topics: [
         'Predictive Modeling',
         'Big Data Frameworks and Platforms (Hadoop, Spark)',
@@ -35,7 +35,7 @@ export default function CallForPapers() {
       ],
     },
     {
-      title: 'Internet of Things (IoT) and Smart Systems',
+      title: 'Track 3: Internet of Things (IoT) and Smart Systems',
       topics: [
         'IoT Architectures and Frameworks',
         'Smart Cities and Infrastructure',
@@ -50,7 +50,7 @@ export default function CallForPapers() {
       ],
     },
     {
-      title: 'Cybersecurity and Cryptography',
+      title: 'Track 4: Cybersecurity and Cryptography',
       topics: [
         'Cryptography and Encryption Techniques',
         'Intrusion Detection and Prevention Systems',
@@ -65,7 +65,7 @@ export default function CallForPapers() {
       ],
     },
     {
-      title: 'Natural Language Processing (NLP) and Speech Recognition',
+      title: 'Track 5: Natural Language Processing (NLP) and Speech Recognition',
       topics: [
         'Language Models and Transformers',
         'Machine Translation',
@@ -80,7 +80,7 @@ export default function CallForPapers() {
       ],
     },
     {
-      title: 'Computer Vision and Image Processing',
+      title: 'Track 6: Computer Vision and Image Processing',
       topics: [
         'Image Classification and Segmentation',
         'Object Detection and Tracking',
@@ -95,7 +95,7 @@ export default function CallForPapers() {
       ],
     },
     {
-      title: 'Interdisciplinary Research',
+      title: 'Track 7: Interdisciplinary Research',
       topics: [
         'AI in Healthcare and Bioinformatics',
         'Computational Social Sciences',
