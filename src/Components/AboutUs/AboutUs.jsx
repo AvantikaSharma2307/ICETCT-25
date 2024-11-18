@@ -2,6 +2,29 @@ import React from "react";
 import { motion } from "framer-motion";
 
 const AboutUs = () => {
+  const splitText = (text) => text.split("").map((char, index) => ({
+    char,
+    index
+  }));
+
+  const keyInsightsContent = splitText(`A key highlight of the conference will be the keynote addresses delivered by globally recognized experts in artificial intelligence and computational techniques. These keynote sessions will offer attendees a unique opportunity to gain valuable perspectives on the latest advancements and future directions in AI and machine learning. In addition to the keynote addresses, ICETCT-2025 will feature technical paper presentations, panel discussions, and interactive workshops designed to provide hands-on experience in areas like deep learning, AI-driven decision-making, and big data analytics.`);
+  
+  const objectivesScopeContent = splitText(`ICETCT-2025 is not only an academic forum but also a platform for networking and knowledge exchange. Through this international gathering, ICETCT-2025 seeks to advance the understanding and implementation of emerging computational techniques, facilitate global collaboration in AI and machine learning, and support the growth of cutting-edge technologies in industries such as healthcare, finance, manufacturing, and more.`);
+
+  const charVariants = {
+    hidden: { opacity: 0, y: 10 }, 
+    visible: (index) => ({
+      opacity: 1,
+      y: 0, 
+      transition: {
+        delay: index * 0.01, 
+        duration: 0.2, 
+        ease: "easeInOut"
+      }
+    })
+  };
+
+
   const headerVariants = {
     hidden: { opacity: 0, y: 50 },
     visible: { 
@@ -145,90 +168,81 @@ const AboutUs = () => {
       </motion.div>
 
       {/* Key Insights */}
-      <motion.div 
-        variants={containerVariants} 
-        initial="hidden" 
-        whileInView="visible"
-        className="flex flex-col sm:flex-row gap-10 px-4 mt-16 sm:px-20"
-      >
-        <div className="w-full sm:w-2/3 text-gray-700 text-lg sm:text-xl sm:ml-10">
-          <motion.h1 
-            variants={headerVariants} 
-            initial="hidden" 
-            whileInView="visible"
-            className="text-center text-4xl font-bold mt-14 mb-14 "
+      <div className="flex flex-col sm:flex-row gap-10 px-4 mt-16 sm:px-20">
+      <div className="w-full sm:w-2/3 text-gray-700 text-lg sm:text-xl sm:ml-10">
+      <motion.h1
+          whileInView={{
+            opacity: 1,
+            y: 0,
+          }}
+          initial={{
+            opacity: 0,
+            y: 30,
+          }}
+          transition={{
+            duration: 0.8,
+            ease: "easeInOut",
+            delay: 0.2,
+          }}
+          className="text-center text-4xl font-bold mt-14 mb-14"
+        >
+          Key Insights
+        </motion.h1>
+
+        <div className="text-justify max-w-full sm:max-w-3xl mx-auto">
+          <motion.p
+            initial="hidden"
+            whileInView="visible" 
+            variants={charVariants}
+            viewport={{ once: true, amount: 0.2 }} 
           >
-            Key Insights
-          </motion.h1>
-
-          <motion.div>
-            <p className="text-justify max-w-full sm:max-w-3xl mx-auto">
-              {`A key highlight of the conference will be the keynote addresses delivered by globally recognized experts in artificial intelligence and computational techniques. These keynote sessions will offer attendees a unique opportunity to gain valuable perspectives on the latest advancements and future directions in AI and machine learning. In addition to the keynote addresses, ICETCT-2025 will feature technical paper presentations, panel discussions, and interactive workshops designed to provide hands-on experience in areas like deep learning, AI-driven decision-making, and big data analytics.`.split(" ").map((word, index) => (
-                <motion.span
-                  key={index}
-                  whileInView={{
-                    filter: "blur(0px)",
-                    opacity: 1,
-                    y: 0,
-                  }}
-                  initial={{
-                    filter: "blur(10px)",
-                    opacity: 0,
-                    y: 5,
-                  }}
-                  transition={{
-                    duration: 0.5,
-                    ease: "easeInOut",
-                    delay: 0.03 * index,
-                  }}
-                  className="inline-block"
-                >
-                  {word}&nbsp;
-                </motion.span>
-              ))}
-            </p>
-          </motion.div>
+            {keyInsightsContent.map(({ char, index }) => (
+              <motion.span key={index} custom={index} variants={charVariants}>
+                {char}
+              </motion.span>
+            ))}
+          </motion.p>
         </div>
+      </div>
 
-        <div className="w-3xl sm:w-2/3 text-gray-700 text-lg sm:text-xl sm:ml-10">
-          <motion.h1 
-            variants={headerVariants} 
-            initial="hidden" 
-            whileInView="visible"
-            className="text-center text-4xl font-bold mt-14 mb-14 "
+      {/* Objectives & Scope Section */}
+      <div className="w-full sm:w-2/3 text-gray-700 text-lg sm:text-xl sm:ml-10">
+      <motion.h1
+          whileInView={{
+            opacity: 1,
+            y: 0,
+          }}
+          initial={{
+            opacity: 0,
+            y: 30,
+          }}
+          transition={{
+            duration: 0.8,
+            ease: "easeInOut",
+            delay: 0.2,
+          }}
+          className="text-center text-4xl font-bold mt-14 mb-14"
+        >
+          Objectives & Scope
+        </motion.h1>
+
+        <div className="text-justify max-w-full sm:max-w-3xl mx-auto">
+          <motion.p
+            initial="hidden"
+            whileInView="visible" 
+            variants={charVariants}
+            viewport={{ once: true, amount: 0.2 }} 
           >
-            Objectives & Scope
-          </motion.h1>
-
-          <motion.div>
-            <p className="text-justify max-w-4xl sm:max-w-3xl mx-auto">
-              {`ICETCT-2025 is not only an academic forum but also a platform for networking and knowledge exchange.Through this  international gathering, ICETCT-2025 seeks to advance the understanding and implementation of emerging computational techniques, facilitate global collaboration in AI and machine learning, and support the growth of cutting-edge technologies in industries such as healthcare, finance, manufacturing, and more.`.split(" ").map((word, index) => (
-                <motion.span
-                  key={index}
-                  whileInView={{
-                    filter: "blur(0px)",
-                    opacity: 1,
-                    y: 0,
-                  }}
-                  initial={{
-                    filter: "blur(10px)",
-                    opacity: 0,
-                    y: 5,
-                  }}
-                  transition={{
-                    duration: 0.5,
-                    ease: "easeInOut",
-                    delay: 0.03 * index,
-                  }}
-                  className="inline-block"
-                >
-                  {word}&nbsp;
-                </motion.span>
-              ))}
-            </p>
-          </motion.div>
+            {objectivesScopeContent.map(({ char, index }) => (
+              <motion.span key={index} custom={index} variants={charVariants}>
+                {char}
+              </motion.span>
+            ))}
+          </motion.p>
         </div>
-      </motion.div>
+      </div>
+    </div>
+
     </div>
   );
 };
