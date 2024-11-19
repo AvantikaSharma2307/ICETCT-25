@@ -1,19 +1,6 @@
 import React from 'react';
 
 function Organisingcommittie() {
-  const fadeInUpVariants = {
-    hidden: { opacity: 0, y: 50 }, 
-    visible: {
-      opacity: 1,
-      y: 1, 
-      transition: {
-        type: 'spring',
-        stiffness: 100,
-        damping: 25,
-        delay: 0.2, 
-      },
-    },
-  };
 
   return (
     <div className="bg-blue-50 text-center px-4  mt-24 md:px-8" id="committees">
@@ -83,22 +70,43 @@ function Organisingcommittie() {
 
         {/* Technical Program Committee */}
         <div className="text-xl font-bold mt-8 mb-4">Technical Program Committee</div>
-        <div className="flex flex-wrap justify-center gap-8 text-xl">
-          <div className="w-full sm:w-2/6">
-            <div>Ms. Nidhi Singh (Chair)</div>
+        <div className="flex flex-wrap justify-center gap-4 text-xl">
+          <div className="w-full sm:w-2/6 md:w-[60%]">
+            <div className='grid grid-cols-2 gap-4'>
+              <div>Ms. Nidhi Singh (Chair)</div>
+              <div>Assistant Professor, Department of CSE-AI</div>
+              </div>
+              <div className='grid grid-cols-2 gap-4'>
             <div>Ms. Preeti Verma (Co-Chair)</div>
+            <div>Assistant Professor, Department of CSE-AI</div>
+            </div>
+            <div className='grid grid-cols-2 gap-4'>
             <div>Mr. Thammali Gangadhar (Member)</div>
+            <div>Assistant Professor, Department of CSE-AI</div>
+            </div>
+            <div className='grid grid-cols-2 gap-4'>
             <div>Ms. Ayushi Mittal (Member)</div>
+            <div>Assistant Professor, Department of CSE-AI</div>
+            </div>
           </div>
         </div>
 
         {/* Publication Committee */}
         <div className="text-xl font-bold mt-8 mb-4">Publication Committee</div>
         <div className="flex flex-wrap justify-center gap-8 text-xl">
-          <div className="w-full sm:w-2/6">
+          <div className="w-full sm:w-2/6 md:w-[60%]">
+          <div className='grid grid-cols-2 gap-4'>
             <div>Ms. Umang Kant (Chair)</div>
+            <div>Assistant Professor, Department of CSE-AI</div>
+            </div>
+            <div className='grid grid-cols-2 gap-4'>
             <div>Ms. Kavya Gupta (Co-Chair)</div>
+            <div>Assistant Professor, Department of CSE-AI</div>
+            </div>
+            <div className='grid grid-cols-2 gap-4'>
             <div>Ms. Anjali Chauhan (Member)</div>
+            <div>Assistant Professor, Department of CSE-AI</div>
+            </div>
           </div>
         </div>
 
@@ -107,6 +115,7 @@ function Organisingcommittie() {
         <div className="flex flex-wrap justify-center gap-8 text-xl">
           <div className="w-full sm:w-2/6">
             <div>Ms. Bhawna (Chair)</div>
+            
             <div>Ms. Akanksha (Co-Chair)</div>
             <div>Ms. Chayanika Bhattacharjee</div>
           </div>
