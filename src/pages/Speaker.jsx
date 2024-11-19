@@ -36,7 +36,7 @@ function Speaker() {
         whileInView="visible" 
         viewport={{ once: false}} 
       >
-        <p className="text-gray-600 text-center text-lg md:text-3xl font-semibold">
+        <p className="text-gray-600 text-center text-lg md:text-3xl font-semibold" id="committees">
           Speakers in ICETCT-2025 will be officials from reputed industries and academicians
           from prominent institutions.
         </p>
