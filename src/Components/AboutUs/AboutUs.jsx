@@ -21,20 +21,19 @@ const AboutUs = () => {
       opacity: 1,
       y: 0, 
       transition: {
-        delay: index * 0.01, 
+        delay: index * 0.005, 
         duration: 0.2, 
         ease: "easeInOut"
       }
     })
   };
 
-
   const headerVariants = {
     hidden: { opacity: 0, y: 50 },
     visible: { 
       opacity: 1, 
       y: 0, 
-      transition: { type: "spring", stiffness: 150, damping: 30, delay: 0.2 }
+      transition: { type: "spring", stiffness: 150, damping: 30, delay: 0.1 }
     }
   };
 
@@ -43,8 +42,8 @@ const AboutUs = () => {
     visible: {
       opacity: 1,
       transition: {
-        delay: 0.8,
-        staggerChildren: 5, 
+        delay: 0.1, 
+        staggerChildren: 0.01, 
       }
     }
   };
@@ -55,7 +54,7 @@ const AboutUs = () => {
       opacity: 1,
       scale: 1,
       rotate: 0,
-      transition: { type: "spring", stiffness: 100, damping: 20, delay: 0.6 }
+      transition: { type: "spring", stiffness: 100, damping: 25, delay: 0.1 } 
     }
   };
 
@@ -63,29 +62,17 @@ const AboutUs = () => {
     hidden: { y: 50 },
     visible: {
       y: 0,
-      transition: { type: "spring", stiffness: 100, damping: 25, delay: 1 },
-    },
+      transition: { type: "spring", stiffness: 100, damping: 25, delay: 0.1 }
+    }
   };
 
   return (
     <div id="aboutus">
-      {/* <marquee direction="left" scrollamount="10" loop="infinite">
-        <div className="flex flex-row gap-5 mt-16">
-          <img src="https://www.kiet.edu/uploads/gallery/sub_gallary/738983416.jpg" alt="KIET"/>
-          <img src="https://www.kiet.edu/uploads/gallery/sub_gallary/941528379.jpg" alt="KIET"/>
-          <img src="https://www.kiet.edu/uploads/gallery/sub_gallary/440826975.jpg" alt="KIET"/>
-          <img src="https://www.kiet.edu/uploads/gallery/sub_gallary/831756760.jpg" alt="KIET"/>
-          <img src="https://www.kiet.edu/uploads/gallery/sub_gallary/479675813.jpg" alt="KIET"/>
-          <img src="https://www.kiet.edu/uploads/gallery/sub_gallary/553833454.jpg" alt="KIET"/>
-          <img src="https://www.kiet.edu/uploads/gallery/sub_gallary/july2020_018.jpg" alt="KIET"/>
-        </div>
-      </marquee> */}
-
       <motion.h1 
         variants={headerVariants} 
         initial="hidden" 
         whileInView="visible"
-        className="text-center text-4xl font-bold mt-14 mb-14 "
+        className="text-center text-4xl font-bold mt-14 mb-14"
       >
         About ICETCT-2025
       </motion.h1>
@@ -98,7 +85,7 @@ const AboutUs = () => {
       >
         <motion.div
           variants={parallaxImageVariants}
-          className="w-full lg:w-1/3 text-center md:text-left "
+          className="w-full lg:w-1/3 text-center md:text-left"
         >
           <motion.div
             variants={imageVariants}
@@ -106,44 +93,44 @@ const AboutUs = () => {
               scale: 1.05, 
               transition: { type: "spring", stiffness: 200, damping: 10 }
             }}
-            className=" rounded-lg "
-          > <div className="justify-center pt-2 scale-90 lg:scale-125 lg:mt-14">
-            <img src="https://www.kiet.edu/uploads/media/multiple_image_upload/3051433.JPG"/>
-              {/* <img src="https://www.kiet.edu/uploads/media/multiple_image_upload/7924940.JPG" /> */}
+            className="rounded-lg"
+          >
+            <div className="justify-center pt-2 scale-90 lg:scale-125 lg:mt-14">
+              <img src="https://www.kiet.edu/uploads/media/multiple_image_upload/3051433.JPG" alt="KIET"/>
             </div>
           </motion.div>
         </motion.div>
 
-        <div className="w-full lg:w-2/3 text-gray-700  text-lg lg:text-xl lg:ml-10  ">
+        <div className="w-full lg:w-2/3 text-gray-700 text-lg lg:text-xl lg:ml-10">
           <motion.div>
             <p className="text-justify max-w-full sm:max-w-3xl mx-auto">
-            <motion.p
-            initial="hidden"
-            whileInView="visible" 
-            variants={charVariants}
-            viewport={{ once: true, amount: 0.2 }} 
-          >
-            {aboutp1.map(({ char, index }) => (
-              <motion.span key={index} custom={index} variants={charVariants}>
-                {char}
-              </motion.span>
-            ))}
-          </motion.p>
+              <motion.p
+                initial="hidden"
+                whileInView="visible" 
+                variants={charVariants}
+                viewport={{ once: true, amount: 0.2 }} 
+              >
+                {aboutp1.map(({ char, index }) => (
+                  <motion.span key={index} custom={index} variants={charVariants}>
+                    {char}
+                  </motion.span>
+                ))}
+              </motion.p>
             </p>
 
-            <p className="text-justify  max-w-full sm:max-w-3xl mx-auto">
-            <motion.p
-            initial="hidden"
-            whileInView="visible" 
-            variants={charVariants}
-            viewport={{ once: true, amount: 0.2 }} 
-          >
-            {aboutp2.map(({ char, index }) => (
-              <motion.span key={index} custom={index} variants={charVariants}>
-                {char}
-              </motion.span>
-            ))}
-          </motion.p>
+            <p className="text-justify max-w-full sm:max-w-3xl mx-auto">
+              <motion.p
+                initial="hidden"
+                whileInView="visible" 
+                variants={charVariants}
+                viewport={{ once: true, amount: 0.2 }} 
+              >
+                {aboutp2.map(({ char, index }) => (
+                  <motion.span key={index} custom={index} variants={charVariants}>
+                    {char}
+                  </motion.span>
+                ))}
+              </motion.p>
             </p>
           </motion.div>
         </div>
@@ -151,80 +138,59 @@ const AboutUs = () => {
 
       {/* Key Insights */}
       <div className="flex flex-col sm:flex-row gap-10 px-4 mt-16 sm:px-20">
-      <div className="w-full sm:w-2/3 text-gray-700 text-lg sm:text-xl sm:ml-10">
-      <motion.h1
-          whileInView={{
-            opacity: 1,
-            y: 0,
-          }}
-          initial={{
-            opacity: 0,
-            y: 30,
-          }}
-          transition={{
-            duration: 0.8,
-            ease: "easeInOut",
-            delay: 0.2,
-          }}
-          className="text-center text-4xl font-bold mt-14 mb-14"
-        >
-          Key Insights
-        </motion.h1>
-
-        <div className="text-justify max-w-full sm:max-w-3xl mx-auto">
-          <motion.p
-            initial="hidden"
-            whileInView="visible" 
-            variants={charVariants}
-            viewport={{ once: true, amount: 0.2 }} 
+        <div className="w-full sm:w-2/3 text-gray-700 text-lg sm:text-xl sm:ml-10">
+          <motion.h1
+            whileInView={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0, y: 30 }}
+            transition={{ duration: 0.4, ease: "easeInOut", delay: 0.2 }}
+            className="text-center text-4xl font-bold mt-14 mb-14"
           >
-            {keyInsightsContent.map(({ char, index }) => (
-              <motion.span key={index} custom={index} variants={charVariants}>
-                {char}
-              </motion.span>
-            ))}
-          </motion.p>
+            Key Insights
+          </motion.h1>
+
+          <div className="text-justify max-w-full sm:max-w-3xl mx-auto">
+            <motion.p
+              initial="hidden"
+              whileInView="visible" 
+              variants={charVariants}
+              viewport={{ once: true, amount: 0.2 }} 
+            >
+              {keyInsightsContent.map(({ char, index }) => (
+                <motion.span key={index} custom={index} variants={charVariants}>
+                  {char}
+                </motion.span>
+              ))}
+            </motion.p>
+          </div>
+        </div>
+
+        {/* Objectives & Scope Section */}
+        <div className="w-full sm:w-2/3 text-gray-700 text-lg sm:text-xl sm:ml-10">
+          <motion.h1
+            whileInView={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0, y: 30 }}
+            transition={{ duration: 0.4, ease: "easeInOut", delay: 0.2 }}
+            className="text-center text-4xl font-bold mt-14 mb-14"
+          >
+            Objectives & Scope
+          </motion.h1>
+
+          <div className="text-justify max-w-full sm:max-w-3xl mx-auto">
+            <motion.p
+              initial="hidden"
+              whileInView="visible" 
+              variants={charVariants}
+              viewport={{ once: true, amount: 0.2 }} 
+            >
+              {objectivesScopeContent.map(({ char, index }) => (
+                <motion.span key={index} custom={index} variants={charVariants}>
+                  {char}
+                </motion.span>
+              ))}
+            </motion.p>
+          </div>
         </div>
       </div>
-
-      {/* Objectives & Scope Section */}
-      <div className="w-full sm:w-2/3 text-gray-700 text-lg sm:text-xl sm:ml-10">
-      <motion.h1
-          whileInView={{
-            opacity: 1,
-            y: 0,
-          }}
-          initial={{
-            opacity: 0,
-            y: 30,
-          }}
-          transition={{
-            duration: 0.8,
-            ease: "easeInOut",
-            delay: 0.2,
-          }}
-          className="text-center text-4xl font-bold mt-14 mb-14"
-        >
-          Objectives & Scope
-        </motion.h1>
-
-        <div className="text-justify max-w-full sm:max-w-3xl mx-auto">
-          <motion.p
-            initial="hidden"
-            whileInView="visible" 
-            variants={charVariants}
-            viewport={{ once: true, amount: 0.2 }} 
-          >
-            {objectivesScopeContent.map(({ char, index }) => (
-              <motion.span key={index} custom={index} variants={charVariants}>
-                {char}
-              </motion.span>
-            ))}
-          </motion.p>
-        </div>
-      </div>
-    </div>
-
     </div>
   );
 };
