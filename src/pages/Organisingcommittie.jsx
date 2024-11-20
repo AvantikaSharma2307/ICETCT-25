@@ -3,8 +3,8 @@ import React from 'react';
 function Organisingcommittie() {
 
   return (
-    <div className="bg-blue-50 text-center px-4  mt-24 md:px-8" id="committees">
-      <div className="my-8">
+    <div className="bg-slate-100 text-center h-full">
+      <div >
         <div className="text-4xl font-bold mb-4 pt-16">Organising Committee</div>
 
         {/* Patron in Chief */}
@@ -16,6 +16,7 @@ function Organisingcommittie() {
             <div>KIET Group of Institutions,Delhi-NCR,Ghaziabad</div>
           </div>
         </div>
+        
         {/* Patron */}
         <div className="text-xl font-bold mb-4 mt-8">Patron </div>
         <div className="flex flex-wrap justify-center gap-8 text-xl">
