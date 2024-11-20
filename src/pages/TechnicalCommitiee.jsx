@@ -7,26 +7,6 @@ function TechnicalCommitiee() {
       <div >
         <div className="text-4xl font-bold mb-4 pt-16">Technical Committee</div>
 
-        {/* Patron in Chief
-        <div className="text-xl font-bold mb-4">Patron in Chief</div>
-        <div className="flex flex-wrap justify-center gap-8 text-xl">
-          <div className="w-full sm:w-2/6">
-            <div >Shri Sarish Agarwal</div>
-            <div>Honourable Chairman</div>
-            <div>KIET Group of Institutions,Delhi-NCR,Ghaziabad</div>
-          </div>
-        </div> */}
-        
-        {/* Patron */}
-        {/* <div className="text-xl font-bold mb-4 mt-8">Patron </div>
-        <div className="flex flex-wrap justify-center gap-8 text-xl">
-          <div className="w-full sm:w-2/6">
-            <div>Prof. (Dr.) Preeti Bajaj</div>
-            <div>Director General</div>
-            <div>KIET Group of Institutions, Delhi-NCR, Ghaziabad</div>
-          </div>
-        </div> */}
-
         <div className="flex flex-wrap justify-center gap-4 text-xl">
           <div className="w-full sm:w-2/6 md:w-[100%]">
             <div className="grid grid-cols-1 gap-1 mb-6 md:grid-cols-2 md:gap-4">
