@@ -101,7 +101,7 @@ export const Tabs = ({
     <>
       <div
         className={cn(
-          "flex flex-row items-center justify-center mx-4 overflow-x-auto lg:text-xl sm:overflow-x-visible max-w-full w-full ",
+          "flex sm:flex-row flex-col items-center justify-start  overflow-x-auto lg:text-xl sm:overflow-x-visible max-w-full w-full",
           containerClassName
         )}
       >
@@ -114,7 +114,7 @@ export const Tabs = ({
             onMouseEnter={() => setHovering(true)}
             onMouseLeave={() => setHovering(false)}
             className={cn(
-              "relative px-6 py-4 sm:mx-4 rounded-full text-black  dark:text-white font-semibold",
+              "relative text-xl px-6 m-2 sm:m-0 sm:px-10 py-3 sm:mx-6 rounded-full text-black dark:text-white font-semibold transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg",
               tabClassName
             )}
             style={{
@@ -136,10 +136,10 @@ export const Tabs = ({
           </button>
         ))}
       </div>
-      
+
       <FadeInDiv
         tabs={tabs}
-        active={active} 
+        active={active}
         key={active.value}
         hovering={hovering}
         className={cn("mt-16", contentClassName)}
@@ -224,6 +224,7 @@ export function Tabcomponent() {
 
   return (
     <div className="relative flex flex-col max-w-full mx-auto w-full items-start justify-start mt-32 overflow-hidden ">
+       <h1 className="text-4xl font-bold text-center w-full m-0 mb-10">Committees</h1> 
       <Tabs tabs={tabs} />
     </div>
   );
