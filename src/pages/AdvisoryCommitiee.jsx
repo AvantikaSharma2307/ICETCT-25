@@ -6,9 +6,6 @@ function AdvisoryCommitiee() {
     <div className=" text-center h-full">
       <div >
         <div className="text-4xl font-bold mb-4 pt-16">Advisory Committee</div>
-
-        {/* Technical Program Committee */}
-        <div className="text-xl font-bold mt-8 mb-4">Technical Program Committee</div>
         <div className="flex flex-wrap justify-center gap-4 text-xl">
           <div className="w-full sm:w-2/6 md:w-[100%]">
             <div className="grid grid-cols-1 gap-1 mb-6 md:grid-cols-2 md:gap-4">
