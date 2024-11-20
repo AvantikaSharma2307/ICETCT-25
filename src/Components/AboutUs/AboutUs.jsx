@@ -95,8 +95,9 @@ const AboutUs = () => {
             }}
             className=" rounded-lg "
           > <div className="justify-center pt-2 scale-90 lg:scale-125 lg:mt-14">
-            <img src="https://www.kiet.edu/uploads/media/multiple_image_upload/3051433.JPG"/>
-              {/* <img src="https://www.kiet.edu/uploads/media/multiple_image_upload/7924940.JPG" /> */}
+            {/* <img src="https://www.kiet.edu/uploads/media/multiple_image_upload/3051433.JPG"/> */}
+              <img src="https://theknowledgereview.com/wp-content/uploads/2022/07/KIET-Group-of-Institutions-Hits-a-Record-of-95.03-Placement.jpg" className="h-72" />
+              {/* <img src="https://cache.careers360.mobi/media/presets/720X480/colleges/social-media/media-gallery/9279/2019/4/11/Auditorium%20of%20KIET%20Group%20of%20Institutions%20Ghaziabad_Auditorium.jpg"/> */}
             </div>
           </motion.div>
         </motion.div>

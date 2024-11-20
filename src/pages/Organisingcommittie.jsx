@@ -3,7 +3,7 @@ import React from 'react';
 function Organisingcommittie() {
 
   return (
-    <div className="bg-slate-100 text-center h-full">
+    <div className=" text-center h-full">
       <div >
         <div className="text-4xl font-bold mb-4 pt-16">Organising Committee</div>
 
@@ -72,7 +72,7 @@ function Organisingcommittie() {
         {/* Technical Program Committee */}
         <div className="text-xl font-bold mt-8 mb-4">Technical Program Committee</div>
         <div className="flex flex-wrap justify-center gap-4 text-xl">
-          <div className="w-full sm:w-2/6 md:w-[60%]">
+          <div className="w-full sm:w-2/6 md:w-[100%]">
             <div className="grid grid-cols-1 gap-1 mb-6 md:grid-cols-2 md:gap-4">
               <div>Ms. Nidhi Singh (Chair)</div>
               <div>Assistant Professor, Department of CSE-AIML</div>
@@ -95,7 +95,7 @@ function Organisingcommittie() {
         {/* Publication Committee */}
         <div className="text-xl font-bold mt-8 mb-4">Publication Committee</div>
         <div className="flex flex-wrap justify-center gap-8 text-xl">
-          <div className="w-full sm:w-2/6 md:w-[60%]">
+          <div className="w-full sm:w-2/6 md:w-[100%]">
             <div className="grid grid-cols-1 gap-1 mb-6 md:grid-cols-2 md:gap-4">
               <div>Ms. Umang Kant (Chair)</div>
               <div>Assistant Professor, Department of CSE-AIML</div>
@@ -114,7 +114,7 @@ function Organisingcommittie() {
         {/* Event Management Committee */}
         <div className="text-xl font-bold mt-8 mb-4">Event Management Committee</div>
         <div className="flex flex-wrap justify-center gap-8 text-xl">
-          <div className="w-full sm:w-2/6 md:w-[60%]">
+          <div className="w-full sm:w-2/6 md:w-[100%]">
             <div className="grid grid-cols-1 gap-1 mb-6 md:grid-cols-2 md:gap-4">
               <div>Ms. Bhawna (Chair)</div>
               <div>Assistant Professor, Department of CSE-AIML</div>
@@ -133,7 +133,7 @@ function Organisingcommittie() {
         {/* Publicity Committee */}
         <div className="text-xl font-bold mt-8 mb-4">Publicity Committee</div>
         <div className="flex flex-wrap justify-center gap-8 text-xl">
-          <div className="w-full sm:w-2/6 md:w-[60%]">
+          <div className="w-full sm:w-2/6 md:w-[100%]">
             <div className="grid grid-cols-1 gap-1 mb-6 md:grid-cols-2 md:gap-4">
               <div>Mr. Bhuvnesh Malik (Chair)</div>
               <div >
@@ -148,7 +148,7 @@ function Organisingcommittie() {
         {/* Local Arrangement Committee */}
         <div className="text-xl font-bold mt-8 mb-4">Local Arrangement Committee</div>
         <div className="flex flex-wrap justify-center gap-8 text-xl">
-          <div className="w-full sm:w-2/6 md:w-[60%]">
+          <div className="w-full sm:w-2/6 md:w-[100%]">
             <div className="grid grid-cols-1 gap-1 mb-6 md:grid-cols-2 md:gap-4">
               <div>Mr. Anurag Gupta (Chair)</div>
               <div >
@@ -180,7 +180,7 @@ function Organisingcommittie() {
         {/* Finance Committee */}
         <div className="text-xl font-bold mt-8 mb-4">Finance Committee</div>
         <div className="flex flex-wrap justify-center gap-8 text-xl">
-          <div className="w-full sm:w-2/6 md:w-[60%]">
+          <div className="w-full sm:w-2/6 md:w-[100%]">
             <div className="grid grid-cols-1 gap-1 mb-6 md:grid-cols-2 md:gap-4">
               <div>Ms. Kumud Alok (Chair)</div>
               <div >
@@ -199,7 +199,7 @@ function Organisingcommittie() {
         {/* Registration Committee */}
         <div className="text-xl font-bold mt-8 mb-4">Registration Committee</div>
         <div className="flex flex-wrap justify-center gap-8 text-xl">
-          <div className="w-full sm:w-2/6 md:w-[60%]">
+          <div className="w-full sm:w-2/6 md:w-[100%]">
             <div className="grid grid-cols-1 gap-1 mb-6 md:grid-cols-2 md:gap-4">
               <div>Ms. Ruchika Mavis Daniel (Chair)</div>
               <div >
@@ -224,7 +224,7 @@ function Organisingcommittie() {
         {/* Other Committees */}
         <div className="text-xl font-bold mt-8 mb-4">Technical Session/Speaker Committee</div>
         <div className="flex flex-wrap justify-center gap-8 text-xl">
-          <div className="w-full sm:w-2/6 md:w-[60%]">
+          <div className="w-full sm:w-2/6 md:w-[100%]">
             <div className="grid grid-cols-1 gap-1 mb-6 md:grid-cols-2 md:gap-4">
               <div>Dr. Puneet Garg (Chair)</div>
               <div >
@@ -242,7 +242,7 @@ function Organisingcommittie() {
 
         <div className="text-xl font-bold mt-8 mb-4">Sponsorship Committee</div>
         <div className="flex flex-wrap justify-center gap-8 text-xl">
-          <div className="w-full sm:w-2/6 md:w-[60%]">
+          <div className="w-full sm:w-2/6 md:w-[100%]">
             <div className="grid grid-cols-1 gap-1 mb-6 md:grid-cols-2 md:gap-4">
               <div>Dr. Puneet Garg (Chair)</div>
               <div >
@@ -272,7 +272,7 @@ function Organisingcommittie() {
 
         <div className="text-xl font-bold mt-8 mb-4">Media Management Committee</div>
         <div className="flex flex-wrap justify-center gap-8 text-xl">
-          <div className="w-full sm:w-2/6 md:w-[60%]">
+          <div className="w-full sm:w-2/6 md:w-[100%]">
             <div className="grid grid-cols-1 gap-1 mb-6 md:grid-cols-2 md:gap-4">
               <div>Ms. Aastha Gupta (Chair)</div>
               <div >
@@ -290,7 +290,7 @@ function Organisingcommittie() {
 
         <div className="text-xl font-bold mt-8 mb-4">Abstract Book/Conference Proceedings</div>
         <div className="flex flex-wrap justify-center gap-8 text-xl">
-          <div className="w-full sm:w-2/6 md:w-[60%]">
+          <div className="w-full sm:w-2/6 md:w-[100%]">
             <div className="grid grid-cols-1 gap-1 mb-6 md:grid-cols-2 md:gap-4">
               <div>Ms. Richa Singh (Chair)</div>
               <div >
@@ -318,7 +318,7 @@ function Organisingcommittie() {
           <div className="w-full sm:w-2/6">
             <div>Mr. Rajeev Kumar Singh (Chair)</div>
             <div >
-              Assistant Professor, Department of CSE-AIML
+              Assistant Professor,<br/> Department of CSE-AIML
             </div>
           </div>
         </div>
@@ -326,7 +326,7 @@ function Organisingcommittie() {
         {/* Registration Kit/Memento Committee */}
         <div className="text-xl font-bold mt-8 mb-4">Registration Kit/Memento Committee</div>
         <div className="flex flex-wrap justify-center gap-8 text-xl">
-          <div className="w-full sm:w-2/6 md:w-[60%]">
+          <div className="w-full sm:w-2/6 md:w-[100%]">
             <div className="grid grid-cols-1 gap-1 mb-6 md:grid-cols-2 md:gap-4">
               <div>Mr. Nagendra Nath Dubey (Chair)</div>
               <div >
@@ -351,7 +351,7 @@ function Organisingcommittie() {
         {/* Certificate Committee */}
         <div className="text-xl font-bold mt-8 mb-4">Certificate Committee</div>
         <div className="flex flex-wrap justify-center gap-8 text-xl">
-          <div className="w-full sm:w-2/6 mb-14 md:w-[60%]">
+          <div className="w-full sm:w-2/6 mb-14 md:w-[100%]">
             <div className="grid grid-cols-1 gap-1 mb-6 md:grid-cols-2 md:gap-4">
               <div>Ms. Nidhi Singh (Chair)</div>
               <div >

@@ -4,8 +4,9 @@ import { ImagesSlider } from "../ui/images-slider.jsx";
 
 import hero1 from "../../assets/hero.png";
 import hero2 from "../../assets/hero2.png";
-import hero3 from "../../assets/hero.png";
-import hero4 from "../../assets/hero2.png";
+import hero3 from "../../assets/1639643742Screenshot 2021-12-16 140203.webp";
+import hero5 from "../../assets/hero2.png";
+import hero4 from "../../assets/auditorium-img1.jpg"
 
 const subHeadings = [
   "Organized by:",
@@ -15,7 +16,7 @@ const subHeadings = [
 ];
 
 const Hero = () => {
-  const images = [hero1, hero2, hero3, hero4];
+  const images = [hero1, hero2, hero3, hero4,hero5];
 
   return (
     <ImagesSlider
