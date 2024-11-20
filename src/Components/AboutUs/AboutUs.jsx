@@ -7,6 +7,10 @@ const AboutUs = () => {
     index
   }));
 
+  const aboutp1 = splitText(`The International Conference on Emerging Trends in Computational Techniques (ICETCT-2025), organized by the Department of Computer Science and Engineering – Artificial Intelligence (CSE-AI) and the Department of Computer Science and Engineering – Artificial Intelligence & Machine Learning (CSE-AIML) at KIET Group of Institutions, is a prestigious academic event scheduled for May 30-31, 2025. This international conference aims to provide a global platform for researchers, academicians, industry professionals, and students to present and discuss their innovative ideas and cutting-edge research in the rapidly evolving fields of computational techniques, artificial intelligence, and machine learning.`);
+
+  const aboutp2 = splitText(`ICETCT-2025 is dedicated to exploring the latest trends and developments in computational sciences, with a special focus on AI, machine learning, data science, and other emerging technologies. The conference will cover a wide range of topics, including deep learning, natural language processing, computer vision, big data analytics, IoT, Cyber Security, and AI applications across various industries. By providing an interdisciplinary platform, ICETCT-2025 aims to bring together thought leaders from academia and industry to share their insights and foster collaboration.`);
+
   const keyInsightsContent = splitText(`A key highlight of the conference will be the keynote addresses delivered by globally recognized experts in artificial intelligence and computational techniques. These keynote sessions will offer attendees a unique opportunity to gain valuable perspectives on the latest advancements and future directions in AI and machine learning. In addition to the keynote addresses, ICETCT-2025 will feature technical paper presentations, panel discussions, and interactive workshops designed to provide hands-on experience in areas like deep learning, AI-driven decision-making, and big data analytics.`);
   
   const objectivesScopeContent = splitText(`ICETCT-2025 is not only an academic forum but also a platform for networking and knowledge exchange. Through this international gathering, ICETCT-2025 seeks to advance the understanding and implementation of emerging computational techniques, facilitate global collaboration in AI and machine learning, and support the growth of cutting-edge technologies in industries such as healthcare, finance, manufacturing, and more.`);
@@ -113,55 +117,33 @@ const AboutUs = () => {
         <div className="w-full lg:w-2/3 text-gray-700  text-lg lg:text-xl lg:ml-10  ">
           <motion.div>
             <p className="text-justify max-w-full sm:max-w-3xl mx-auto">
-              {`The International Conference on Emerging Trends in Computational Techniques (ICETCT-2025), organized by the Department of Computer Science and Engineering – Artificial Intelligence (CSE-AI) and the Department of Computer Science and Engineering – Artificial Intelligence & Machine Learning (CSE-AIML) at KIET Group of Institutions, is a prestigious academic event scheduled for May 30-31, 2025. This international conference aims to provide a global platform for researchers, academicians, industry professionals, and students to present and discuss their innovative ideas and cutting-edge research in the rapidly evolving fields of computational techniques, artificial intelligence, and machine learning.`.split(" ").map((word, index) => (
-                <motion.span
-                  key={index}
-                  whileInView={{
-                    filter: "blur(0px)",
-                    opacity: 1,
-                    y: -0.5,
-                  }}
-                  initial={{
-                    filter: "blur(10px)",
-                    opacity: 0,
-                    y: 5,
-                  }}
-                  transition={{
-                    duration: 0.5,
-                    ease: "easeInOut",
-                    delay: 0.03 * index,
-                  }}
-                  className="inline-block"
-                >
-                  {word}&nbsp;
-                </motion.span>
-              ))}
+            <motion.p
+            initial="hidden"
+            whileInView="visible" 
+            variants={charVariants}
+            viewport={{ once: true, amount: 0.2 }} 
+          >
+            {aboutp1.map(({ char, index }) => (
+              <motion.span key={index} custom={index} variants={charVariants}>
+                {char}
+              </motion.span>
+            ))}
+          </motion.p>
             </p>
 
             <p className="text-justify  max-w-full sm:max-w-3xl mx-auto">
-              {`ICETCT-2025 is dedicated to exploring the latest trends and developments in computational sciences, with a special focus on AI, machine learning, data science, and other emerging technologies. The conference will cover a wide range of topics, including deep learning, natural language processing, computer vision, big data analytics, IoT, Cyber Security, and AI applications across various industries. By providing an interdisciplinary platform, ICETCT-2025 aims to bring together thought leaders from academia and industry to share their insights and foster collaboration.`.split(" ").map((word, index) => (
-                <motion.span
-                  key={index}
-                  whileInView={{
-                    filter: "blur(0px)",
-                    opacity: 1,
-                    y: 0,
-                  }}
-                  initial={{
-                    filter: "blur(10px)",
-                    opacity: 0,
-                    y: 5,
-                  }}
-                  transition={{
-                    duration: 0.5,
-                    ease: "easeInOut",
-                    delay: 0.03 * index,
-                  }}
-                  className="inline-block"
-                >
-                  {word}&nbsp;
-                </motion.span>
-              ))}
+            <motion.p
+            initial="hidden"
+            whileInView="visible" 
+            variants={charVariants}
+            viewport={{ once: true, amount: 0.2 }} 
+          >
+            {aboutp2.map(({ char, index }) => (
+              <motion.span key={index} custom={index} variants={charVariants}>
+                {char}
+              </motion.span>
+            ))}
+          </motion.p>
             </p>
           </motion.div>
         </div>
