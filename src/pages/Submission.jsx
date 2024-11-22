@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 export default function PaperSubmission() {
   return (
-    <div className="min-h-screen py-12 px-4 sm:px-6 lg:px-8 bg-gray-100" id="submission">
+    <div className="min-h-screen py-12 px-4 sm:px-6 pt-28 lg:px-8 bg-gray-100" id="submission">
       <div className="max-w-4xl mx-auto">
       <motion.h1
           initial={{ opacity: 0, y: -50 }}

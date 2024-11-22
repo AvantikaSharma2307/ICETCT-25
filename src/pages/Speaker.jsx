@@ -17,7 +17,7 @@ function Speaker() {
   };
 
   return (
-    <>
+    <div id='speaker'className='pt-20' >
       <motion.div
         className="text-center text-white w-full h-16"
         variants={containerVariants}
@@ -41,7 +41,7 @@ function Speaker() {
           from prominent institutions.
         </p>
       </motion.div>
-    </>
+    </div>
   );
 }
 

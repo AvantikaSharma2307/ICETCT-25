@@ -31,7 +31,7 @@ function Accomodation() {
   };
 
   return (
-    <div id="accomodation">
+    <div className='pt-28' id="accommodation">
       <motion.div
         className="text-center text-white w-full h-16"
         variants={containerVariants}

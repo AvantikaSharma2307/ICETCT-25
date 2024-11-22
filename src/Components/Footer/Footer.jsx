@@ -28,33 +28,54 @@ export default function Footer() {
           className="mb-8 md:mb-0"
         >
           <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
-          <ul className="space-y-2">
-            <li>
-              <a href="#home" className="text-gray-400 hover:text-white">
-                About Us
-              </a>
-            </li>
-            <li>
-              <a href="#submission" className="text-gray-400 hover:text-white">
-                Submissions
-              </a>
-            </li>
-            <li>
-              <a href="#registration" className="text-gray-400 hover:text-white">
-                Registrations
-              </a>
-            </li>
-            <li>
-              <a href="#accomodation" className="text-gray-400 hover:text-white">
-                Accommodation
-              </a>
-            </li>
-            <li>
-              <a href="#contact" className="text-gray-400 hover:text-white">
-                Contact Us
-              </a>
-            </li>
-          </ul>
+          <div className="flex justify-between  gap-x-14">
+              <ul className="space-y-2 w-full">
+                <li>
+                  <a href="#home" className="text-gray-400 hover:text-white">
+                    Home
+                  </a>
+                </li>
+                <li>
+                  <a href="#callforpapers" className="text-gray-400 hover:text-white">
+                    Call For Papers
+                  </a>
+                </li>
+                <li>
+                  <a href="#submission" className="text-gray-400 hover:text-white">
+                    Submission
+                  </a>
+                </li>
+                <li>
+                  <a href="#registration" className="text-gray-400 hover:text-white">
+                    Registration
+                  </a>
+                </li>
+              </ul>
+              <ul className="space-y-2 w-1/2">
+                <li>
+                  <a href="#accommodation" className="text-gray-400 hover:text-white">
+                    Accommodation
+                  </a>
+                </li>
+                <li>
+                  <a href="#speaker" className="text-gray-400 hover:text-white">
+                    Speaker
+                  </a>
+                </li>
+                <li>
+                  <a href="#committees" className="text-gray-400 hover:text-white">
+                    Committees
+                  </a>
+                </li>
+                <li>
+                  <a href="#contact" className="text-gray-400 hover:text-white">
+                    Contact
+                  </a>
+                </li>
+              </ul>
+          </div>
+
+
         </motion.div>
 
         {/* Social Media Icons Section */}
