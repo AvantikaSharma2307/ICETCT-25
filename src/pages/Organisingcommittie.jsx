@@ -5,7 +5,7 @@ function Organisingcommittie() {
   return (
     <div className=" text-center h-full">
       <div >
-        <div className="text-4xl font-bold mb-4 pt-16">Organising Committee</div>
+        <div className="text-4xl font-bold mb-4 pt-16">Organizing Committee</div>
 
         {/* Patron in Chief */}
         <div className="text-xl font-bold mb-4">Patron in Chief</div>

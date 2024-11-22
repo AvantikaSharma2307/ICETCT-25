@@ -67,7 +67,7 @@ export const ToggleTabs = ({ tabs, containerClassName, tabClassName }) => {
 export function Tabcomponent() {
   const tabs = [
     {
-      title: "Organising Committee",
+      title: "Organizing Committee",
       value: "organising",
       content: (
         <div>
