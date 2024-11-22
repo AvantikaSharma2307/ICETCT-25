@@ -31,14 +31,14 @@ function Accomodation() {
   };
 
   return (
-    <div className='pt-28' id="accommodation">
+    <div>
       <motion.div
         className="text-center text-white w-full h-16"
         variants={containerVariants}
         initial="hidden"
         whileInView="visible"
       >
-        <h1 className="text-3xl md:text-4xl font-bold text-black">Accommodation</h1>
+        <h1 className="text-3xl md:text-4xl font-bold text-black -mt-16 ">Accommodation</h1>
       </motion.div>
 
       <motion.div
