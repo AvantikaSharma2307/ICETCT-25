@@ -93,7 +93,7 @@ function Registration() {
 <button className="button w-44 ml-14 md:ml-[45%]">
     <span className="button_lg">
         <span className="button_sl"></span>
-        <span className="button_text ">Pay Now</span>
+        <span className="button_text " id="accommodation">Pay Now</span>
     </span>
 </button>
       </div>
