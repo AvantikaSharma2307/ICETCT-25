@@ -34,9 +34,9 @@ const Navbar = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ type: "spring", stiffness: 100, damping: 10, delay: 0.2 }}
       >
-        <div className="flex items-center justify-start gap-2 leading-none">
+        <div className="flex items-center justify-start gap-0 leading-none">
      
-          <img src="image.png" alt="Logo" className="m-2 w-42 h-10" />
+          <img src="image.png" alt="Logo" className="-ml-20 mr-1 w-42 h-10" />
 
           <img src={Image1} alt="Logo" className="hidden md:block w-16 h-16" />
           <img src={Image2} alt="Logo" className="hidden md:block w-16" />
@@ -48,7 +48,7 @@ const Navbar = () => {
 
 
       <div className="hidden lg:flex justify-center space-x-6 m-2 ">
-        {["","Home", "Call For Papers", "Submission", "Registration", "Accomodation", "Speaker", "Committees", "Contact",""].map((item, index) => (
+        {["","Home", "Call For Papers", "Submission", "Registration", "Accommodation", "Speaker", "Committees", "Contact",""].map((item, index) => (
           <motion.li
             key={item}
             className="hover:text-orange-700 list-none m-2 hover:scale-105 hover:text-lg hover:font-bold transition-all duration-300"
@@ -74,7 +74,7 @@ const Navbar = () => {
           y: { type: "spring", stiffness: 50, damping: 25 },
         }}
       >
-        {["Home", "Call For Papers", "Submission", "Registration", "Accomodation", "Speaker", "Committees", "Contact"].map((item, index) => (
+        {["Home", "Call For Papers", "Submission", "Registration", "Accommodation", "Speaker", "Committees", "Contact"].map((item, index) => (
           <motion.li
             key={item}
             className="hover:text-orange-700 hover:scale-105 hover:font-bold transition-all duration-300"

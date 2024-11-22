@@ -112,7 +112,7 @@ export default function CallForPapers() {
   ];
 
   return (
-    <div className="w-full mx-auto px-6 py-16 bg-gradient-to-br from-teal-100 via-blue-100 to-purple-200 mt-14" id="callforpapers">
+    <div className="w-full mx-auto px-6 py-16 pt-28 bg-gradient-to-br from-teal-100 via-blue-100 to-purple-200 mt-14" id="callforpapers">
       <motion.div
         whileInView={{ opacity: 1 }}
         initial={{ opacity: 0 }}
