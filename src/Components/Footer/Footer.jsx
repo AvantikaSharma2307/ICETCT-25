@@ -3,8 +3,8 @@ import { motion } from "framer-motion";
 
 export default function Footer() {
   return (
-    <footer className="bg-blue-950 text-white py-10 px-4 md:px-20">
-      <div className="container mx-auto flex flex-col md:flex-row justify-between">
+    <footer className="bg-blue-950 text-white py-10 px-4 xl:px-20">
+      <div className="container mx-auto flex flex-col lg:flex-row justify-between">
         {/* Logo Section */}
         <motion.h1
             initial={{ opacity : 1 , y :100 }}
@@ -15,7 +15,7 @@ export default function Footer() {
               damping: 10,
               delay:0.2,
             }}
-          className="mb-8 md:mb-0"
+          className="mb-8 xl:mb-0"
         >
           <img src="image.png" alt="Logo" />
         </motion.h1>
@@ -25,11 +25,11 @@ export default function Footer() {
           initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ type: "spring", stiffness: 100, damping: 20, delay: 0.2 }}
-          className="mb-8 md:mb-0"
+          className="mb-8 xl:mb-0"
         >
           <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
-          <div className="flex justify-between  gap-x-14">
-              <ul className="space-y-2 w-full">
+          <div className="flex justify-between ml-2 lg:gap-x-14">
+              <ul className="space-y-2 w-1/2">
                 <li>
                   <a href="#home" className="text-gray-400 hover:text-white">
                     Home
