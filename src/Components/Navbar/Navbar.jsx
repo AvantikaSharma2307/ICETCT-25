@@ -38,11 +38,11 @@ const Navbar = () => {
      
           <img src="image.png" alt="Logo" className="lg:-ml-20 m-2 mr-1 w-42 h-10" />
 
-          <img src={Image1} alt="Logo" className="hidden xl:block w-16 h-16" />
-          <img src={Image2} alt="Logo" className="hidden xl:block w-16" />
-          <img src={Image3} alt="Logo" className="hidden xl:block w-16" />
-          <img src={Image4} alt="Logo" className="hidden xl:block w-16" />
-          <img src={Image5} alt="Logo" className="hidden xl:block w-14 h-12" />
+          <img src={Image1} alt="Logo" className="hidden md:block lg:hidden xl:block w-16 h-16" />
+          <img src={Image2} alt="Logo" className="hidden md:block lg:hidden xl:block w-16" />
+          <img src={Image3} alt="Logo" className="hidden md:block lg:hidden xl:block w-16" />
+          <img src={Image4} alt="Logo" className="hidden md:block lg:hidden xl:block w-16" />
+          <img src={Image5} alt="Logo" className="hidden md:block lg:hidden xl:block w-14 h-12" />
         </div>
       </motion.div>
 
@@ -54,7 +54,7 @@ const Navbar = () => {
             className="hover:text-orange-700 list-none m-2 hover:scale-105 hover:text-lg hover:font-bold transition-all duration-300"
             initial={{ opacity: 0, y: -100 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{  type: "spring", stiffness: 100, damping: 10, delay: index * 0.2 }}
+            transition={{  type: "spring", stiffness: 100, damping: 10, delay: 0.2 }}
           >
             <a href={`#${item.toLowerCase().replace(/\s+/g, '')}`}>{item}</a>
           </motion.li>
@@ -81,7 +81,7 @@ const Navbar = () => {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: mobileMenu ? 1 : 0, y: mobileMenu ? 0 : -20 }}
             transition={{
-              delay: index * 0.2, 
+              delay: 0.2, 
               type: "spring",
               stiffness: 100,
               damping: 15,

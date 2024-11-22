@@ -7,7 +7,10 @@ export default {
     "./node_modules/@nextui-org/theme/dist/components/(accordion|table|divider|checkbox|spacer).js"
   ],
   theme: {
-    extend: {},
+    extend: {screens: {
+      'xl': '1430px',
+      // => @media (min-width: 992px) { ... }
+    },},
   },
   plugins: [
     nextui({
