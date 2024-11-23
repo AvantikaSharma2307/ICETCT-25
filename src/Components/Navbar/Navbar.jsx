@@ -47,14 +47,14 @@ const Navbar = () => {
       </motion.div>
 
 
-      <div className="hidden lg:flex justify-center space-x-6 m-2 ">
-        {["","Home", "Call For Papers", "Submission", "Registration", "Accommodation", "Speaker", "Committees", "Contact",""].map((item, index) => (
+      <div className="hidden lg:flex justify-center space-x-6 mr-2 ">
+        {["","Home", "Call For Papers", "Submission", "Registration", "Accommodation", "Speaker", "Committees", "Contact"].map((item, index) => (
           <motion.li
             key={item}
             className="hover:text-orange-700 list-none m-2 hover:scale-105 hover:text-lg hover:font-bold transition-all duration-300"
-            initial={{ opacity: 0, y: -100 }}
+            initial={{ opacity: 0, y: -200 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{  type: "spring", stiffness: 100, damping: 10, delay: 0.2 }}
+            transition={{  type: "spring", stiffness: 100, damping: 10, delay: index * 0.05 + 0.2 }}
           >
             <a href={`#${item.toLowerCase().replace(/\s+/g, '')}`}>{item}</a>
           </motion.li>
@@ -62,34 +62,40 @@ const Navbar = () => {
       </div>
 
       <motion.ul
-        className={`lg:hidden ${mobileMenu ? "mobile-menu" : "hidden"}`}
-        onClick={toggleMenu}
-        initial={{ opacity: 0, y: -50 }}
-        animate={{
-          opacity: mobileMenu ? 1 : 0,
-          y: mobileMenu ? 0 : -50,
-        }}
-        transition={{
-          opacity: { duration: 0.3 },
-          y: { type: "spring", stiffness: 50, damping: 25 },
-        }}
-      >
-        {["Home", "Call For Papers", "Submission", "Registration", "Accommodation", "Speaker", "Committees", "Contact"].map((item, index) => (
-          <motion.li
-            key={item}
-            className="hover:text-orange-700 hover:scale-105 hover:font-bold transition-all duration-300"
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: mobileMenu ? 1 : 0, y: mobileMenu ? 0 : -20 }}
-            transition={{
-              delay: 0.2, 
-              type: "spring",
-              stiffness: 100,
-              damping: 15,
-            }}
-          >
-            <a href={`#${item.toLowerCase().replace(/\s+/g, '')}`}>{item}</a>
-          </motion.li>
-        ))}
+          className={`lg:hidden ${mobileMenu ? "mobile-menu" : "hidden"} min-w-[200px] w-2/5 sm:w-4/12 md:w-1/4 m-auto`}
+          onClick={toggleMenu}
+          initial={{ opacity: 0 }}
+          animate={{
+            opacity: mobileMenu ? 1 : 0,
+          }}
+          transition={{
+            opacity: { duration: 0.3 }, // Increase opacity transition duration
+            y: { type: "spring", stiffness: 100, damping: 25 },
+          }}
+        >
+          {["Home", "Call For Papers", "Submission", "Registration", "Accommodation", "Speaker", "Committees", "Contact"].map((item, index) => (
+            <motion.li
+              key={item}
+              className="hover:text-orange-700 hover:scale-105 hover:font-bold transition-all duration-300 my-8 mx-4"
+              initial={{ opacity: 0, scale: 0.5, x: 300 }}
+              animate={{
+                opacity: mobileMenu ? 1 : 0,
+                scale: mobileMenu ? 1 : 0.5,
+                x: mobileMenu ? 0 : 300,
+              }}
+              transition={{
+                delay: index * 0.1 + 0.1, 
+                duration: 0.1, 
+                type: "spring",
+                stiffness: 100,
+                damping: 15,
+              }}
+            >
+              <a href={`#${item.toLowerCase().replace(/\s+/g, '')}`} className="text-base mx-4">
+                {item}
+              </a>
+            </motion.li>
+          ))}
       </motion.ul>
 
       <motion.div

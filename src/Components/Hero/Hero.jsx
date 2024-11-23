@@ -3,10 +3,16 @@ import React from "react";
 import { ImagesSlider } from "../ui/images-slider.jsx";
 
 import hero1 from "../../assets/hero.png";
-import hero2 from "../../assets/hero2.png";
-import hero3 from "../../assets/1639643742Screenshot 2021-12-16 140203.webp";
-import hero5 from "../../assets/hero2.png";
-import hero4 from "../../assets/auditorium-img1.jpg"
+// import hero2 from "../../assets/hero2.png";
+import hero3 from "../../assets/hero3.webp";
+import hero4 from "../../assets/hero4.png"
+import hero5 from "../../assets/hero5.png"
+import hero6 from "../../assets/hero6.png"
+import hero7 from "../../assets/hero7.png"
+import hero8 from "../../assets/hero8.png"
+import hero9 from "../../assets/hero9.png"
+import hero10 from "../../assets/hero10.png"
+import hero11 from "../../assets/hero11.png"
 
 const subHeadings = [
   "Organized by:",
@@ -16,7 +22,9 @@ const subHeadings = [
 ];
 
 const Hero = () => {
-  const images = [hero1, hero2, hero3, hero4,hero5];
+  
+  const images = [hero1, hero3, hero5];
+  // const images = [hero1, hero3, hero4, hero5, hero6, hero7, hero8, hero9, hero10, hero11];
 
   return (
     <ImagesSlider

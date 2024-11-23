@@ -64,7 +64,7 @@ export const ToggleTabs = ({ tabs, containerClassName, tabClassName }) => {
   );
 };
 
-export function Tabcomponent() {
+export default function Tabcomponent() {
   const tabs = [
     {
       title: "Organizing Committee",
