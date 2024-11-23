@@ -10,7 +10,7 @@ const AnimatedText = ({ text, el: Wrapper = "p", once = true, className = "" }) 
       opacity: 1,
       y: 0,
       transition: {
-        delay: index * 0.05, 
+        delay: index * 0.02, 
         duration: 0.4, 
         ease: "easeOut",
       },
