@@ -74,19 +74,19 @@ function Organisingcommittie() {
         <div className="flex flex-wrap justify-center gap-4 text-xl">
           <div className="w-full sm:w-2/6 md:w-[100%]">
             <div className="grid grid-cols-1 gap-1 mb-6   md:gap-4">
-              <div>Ms. Nidhi Singh (Chair) ,Assistant Professor, Department of CSE-AIML</div>
+              <div>Ms. Nidhi Singh ,Assistant Professor, Department of CSE-AIML (Chair)</div>
               {/* <div>Assistant Professor, Department of CSE-AIML</div> */}
             </div>
             <div className="grid grid-cols-1 gap-1 mb-6   md:gap-4">
-              <div>Ms. Preeti Verma (Co-Chair) ,Assistant Professor, Department of CSE-AI</div>
+              <div>Ms. Preeti Verma  ,Assistant Professor, Department of CSE-AI (Co-Chair)</div>
               {/* <div>Assistant Professor, Department of CSE-AI</div> */}
             </div>
             <div className="grid grid-cols-1 gap-1 mb-6   md:gap-4">
-              <div>Mr. Thammali Gangadhar (Member) ,Assistant Professor, Department of CSE-AIML</div>
+              <div>Mr. Thammali Gangadhar  ,Assistant Professor, Department of CSE-AIML (Member)</div>
               {/* <div>Assistant Professor, Department of CSE-AIML</div> */}
             </div>
             <div className="grid grid-cols-1 gap-1 mb-6   md:gap-4">
-              <div>Ms. Ayushi Mittal (Member) ,Assistant Professor, Department of CSE-AI</div>
+              <div>Ms. Ayushi Mittal  ,Assistant Professor, Department of CSE-AI (Member)</div>
               {/* <div>Assistant Professor, Department of CSE-AI</div> */}
             </div>
           </div>
@@ -97,15 +97,15 @@ function Organisingcommittie() {
         <div className="flex flex-wrap justify-center gap-8 text-xl">
           <div className="w-full sm:w-2/6 md:w-[100%]">
             <div className="grid grid-cols-1 gap-1 mb-6   md:gap-4">
-              <div>Ms. Umang Kant (Chair) ,Assistant Professor, Department of CSE-AIML</div>
+              <div>Ms. Umang Kant  ,Assistant Professor, Department of CSE-AIML (Chair)</div>
               {/* <div>Assistant Professor, Department of CSE-AIML</div> */}
             </div>
             <div className="grid grid-cols-1 gap-1 mb-6   md:gap-4">
-              <div>Ms. Kavya Gupta (Co-Chair) ,Assistant Professor, Department of CSE-AIML</div>
+              <div>Ms. Kavya Gupta  ,Assistant Professor, Department of CSE-AIML (Co-Chair)</div>
               {/* <div>Assistant Professor, Department of CSE-AIML</div> */}
             </div>
             <div className="grid grid-cols-1 gap-1 mb-6   md:gap-4">
-              <div>Ms. Anjali Chauhan (Member) ,Assistant Professor, Department of CSE-AI</div>
+              <div>Ms. Anjali Chauhan  ,Assistant Professor, Department of CSE-AI (Member)</div>
               {/* <div>Assistant Professor, Department of CSE-AI</div> */}
             </div>
           </div>
@@ -116,11 +116,11 @@ function Organisingcommittie() {
         <div className="flex flex-wrap justify-center gap-8 text-xl">
           <div className="w-full sm:w-2/6 md:w-[100%]">
             <div className="grid grid-cols-1 gap-1 mb-6   md:gap-4">
-              <div>Ms. Bhawna (Chair) ,Assistant Professor, Department of CSE-AIML</div>
+              <div>Ms. Bhawna ,Assistant Professor, Department of CSE-AIML  (Chair)</div>
               {/* <div>Assistant Professor, Department of CSE-AIML</div> */}
             </div>
             <div className="grid grid-cols-1 gap-1 mb-6   md:gap-4">
-              <div>Ms. Akanksha (Co-Chair) ,Assistant Professor, Department of CSE-AIML</div>
+              <div>Ms. Akanksha  ,Assistant Professor, Department of CSE-AIML (Co-Chair)</div>
               {/* <div>Assistant Professor, Department of CSE-AIML</div> */}
             </div>
             <div className="grid grid-cols-1 gap-1 mb-6   md:gap-4">
@@ -135,7 +135,7 @@ function Organisingcommittie() {
         <div className="flex flex-wrap justify-center gap-8 text-xl">
           <div className="w-full sm:w-2/6 md:w-[100%]">
             <div className="grid grid-cols-1 gap-1 mb-6   md:gap-4">
-              <div>Mr. Bhuvnesh Malik (Chair) ,Assistant Professor, Department of CSE-AIML</div>
+              <div>Mr. Bhuvnesh Malik  ,Assistant Professor, Department of CSE-AIML (Chair)</div>
               {/* <div >
                 Assistant Professor, Department of CSE-AIML
               </div> */}
@@ -150,16 +150,16 @@ function Organisingcommittie() {
         <div className="flex flex-wrap justify-center gap-8 text-xl">
           <div className="w-full sm:w-2/6 md:w-[100%]">
             <div className="grid grid-cols-1 gap-1 mb-6 md:gap-4">
-              <div>Mr. Anurag Gupta (Chair), Assistant Professor, Department of CSE-AI</div>
+              <div>Mr. Anurag Gupta , Assistant Professor, Department of CSE-AI (Chair)</div>
             </div>
             <div className="grid grid-cols-1 gap-1 mb-6 md:gap-4">
-              <div>Mr. Ajay Singh (Co-Chair), Assistant Professor, Department of CSE-AI</div>
+              <div>Mr. Ajay Singh , Assistant Professor, Department of CSE-AI (Co-Chair)</div>
             </div>
             <div className="grid grid-cols-1 gap-1 mb-6 md:gap-4">
-              <div>Ms. Ruchi Arora (Member), Assistant Professor, Department of CSE-AI</div>
+              <div>Ms. Ruchi Arora , Assistant Professor, Department of CSE-AI (Member)</div>
             </div>
             <div className="grid grid-cols-1 gap-1 mb-6 md:gap-4">
-              <div>Mr. Jitendra (Member), Assistant Professor, Department of CSE-AI</div>
+              <div>Mr. Jitendra , Assistant Professor, Department of CSE-AI (Member)</div>
             </div>
           </div>
         </div>
@@ -169,10 +169,10 @@ function Organisingcommittie() {
         <div className="flex flex-wrap justify-center gap-8 text-xl">
           <div className="w-full sm:w-2/6 md:w-[100%]">
             <div className="grid grid-cols-1 gap-1 mb-6 md:gap-4">
-              <div>Ms. Kumud Alok (Chair), Assistant Professor, Department of CSE-AI</div>
+              <div>Ms. Kumud Alok , Assistant Professor, Department of CSE-AI (Chair)</div>
             </div>
             <div className="grid grid-cols-1 gap-1 mb-6 md:gap-4">
-              <div>Mr. Rachit Patel (Co-Chair), Assistant Professor, Department of CSE-AIML</div>
+              <div>Mr. Rachit Patel , Assistant Professor, Department of CSE-AIML (Co-Chair)</div>
             </div>
           </div>
         </div>
@@ -182,13 +182,13 @@ function Organisingcommittie() {
         <div className="flex flex-wrap justify-center gap-8 text-xl">
           <div className="w-full sm:w-2/6 md:w-[100%]">
             <div className="grid grid-cols-1 gap-1 mb-6 md:gap-4">
-              <div>Ms. Ruchika Mavis Daniel (Chair), Assistant Professor, Department of CSE-AI</div>
+              <div>Ms. Ruchika Mavis Daniel , Assistant Professor, Department of CSE-AI (Chair)</div>
             </div>
             <div className="grid grid-cols-1 gap-1 mb-6 md:gap-4">
-              <div>Ms. Gargi Singh (Co-Chair), Assistant Professor, Department of CSE-AI</div>
+              <div>Ms. Gargi Singh , Assistant Professor, Department of CSE-AI (Co-Chair)</div>
             </div>
             <div className="grid grid-cols-1 gap-1 mb-6 md:gap-4">
-              <div>Ms. Shaifali Rao (Member), Assistant Professor, Department of CSE-AIML</div>
+              <div>Ms. Shaifali Rao , Assistant Professor, Department of CSE-AIML (Member)</div>
             </div>
           </div>
         </div>
@@ -198,10 +198,10 @@ function Organisingcommittie() {
         <div className="flex flex-wrap justify-center gap-8 text-xl">
           <div className="w-full sm:w-2/6 md:w-[100%]">
             <div className="grid grid-cols-1 gap-1 mb-6 md:gap-4">
-              <div>Dr. Puneet Garg (Chair), Associate Professor, Department of CSE-AI</div>
+              <div>Dr. Puneet Garg , Associate Professor, Department of CSE-AI (Chair)</div>
             </div>
             <div className="grid grid-cols-1 gap-1 mb-6 md:gap-4">
-              <div>Dr. Gaurav Srivastav (Co-Chair), Assistant Professor, Department of CSE-AI</div>
+              <div>Dr. Gaurav Srivastav , Assistant Professor, Department of CSE-AI (Co-Chair)</div>
             </div>
           </div>
         </div>
@@ -211,16 +211,16 @@ function Organisingcommittie() {
         <div className="flex flex-wrap justify-center gap-8 text-xl">
           <div className="w-full sm:w-2/6 md:w-[100%]">
             <div className="grid grid-cols-1 gap-1 mb-6 md:gap-4">
-              <div>Dr. Puneet Garg (Chair), Associate Professor, Department of CSE-AI</div>
+              <div>Dr. Puneet Garg , Associate Professor, Department of CSE-AI (Chair)</div>
             </div>
             <div className="grid grid-cols-1 gap-1 mb-6 md:gap-4">
-              <div>Ms. Payal Chhabra (Member), Assistant Professor, Department of CSE-AIML</div>
+              <div>Ms. Payal Chhabra , Assistant Professor, Department of CSE-AIML (Member)</div>
             </div>
             <div className="grid grid-cols-1 gap-1 mb-6 md:gap-4">
-              <div>Mr. Rajeev Kumar Singh (Member), Assistant Professor, Department of CSE-AIML</div>
+              <div>Mr. Rajeev Kumar Singh , Assistant Professor, Department of CSE-AIML (Member)</div>
             </div>
             <div className="grid grid-cols-1 gap-1 mb-6 md:gap-4">
-              <div>Ms. Richa Singh (Co-Chair), Assistant Professor, Department of CSE-AI</div>
+              <div>Ms. Richa Singh , Assistant Professor, Department of CSE-AI (Co-Chair)</div>
             </div>
           </div>
         </div>
@@ -230,10 +230,10 @@ function Organisingcommittie() {
         <div className="flex flex-wrap justify-center gap-8 text-xl">
           <div className="w-full sm:w-2/6 md:w-[100%]">
             <div className="grid grid-cols-1 gap-1 mb-6 md:gap-4">
-              <div>Ms. Aastha Gupta (Chair), Assistant Professor, Department of CSE-AI</div>
+              <div>Ms. Aastha Gupta , Assistant Professor, Department of CSE-AI (Chair)</div>
             </div>
             <div className="grid grid-cols-1 gap-1 mb-6 md:gap-4">
-              <div>Mr. Shivansh Prasad (Co-Chair), Assistant Professor, Department of CSE-AI</div>
+              <div>Mr. Shivansh Prasad , Assistant Professor, Department of CSE-AI (Co-Chair)</div>
             </div>
           </div>
         </div>
@@ -243,13 +243,13 @@ function Organisingcommittie() {
         <div className="flex flex-wrap justify-center gap-8 text-xl">
           <div className="w-full sm:w-2/6 md:w-[100%]">
             <div className="grid grid-cols-1 gap-1 mb-6 md:gap-4">
-              <div>Ms. Richa Singh (Chair), Assistant Professor, Department of CSE-AI</div>
+              <div>Ms. Richa Singh , Assistant Professor, Department of CSE-AI (Chair)</div>
             </div>
             <div className="grid grid-cols-1 gap-1 mb-6 md:gap-4">
-              <div>Mr. Deepak Tripathi (Co-Chair), Assistant Professor, Department of CSE-AI</div>
+              <div>Mr. Deepak Tripathi , Assistant Professor, Department of CSE-AI (Co-Chair)</div>
             </div>
             <div className="grid grid-cols-1 gap-1 mb-6 md:gap-4">
-              <div>Mr. Abhishek Shukla (Member), Assistant Professor, Department of CSE-AIML</div>
+              <div>Mr. Abhishek Shukla , Assistant Professor, Department of CSE-AIML  (Member)</div>
             </div>
           </div>
         </div>
@@ -258,7 +258,7 @@ function Organisingcommittie() {
         <div className="text-xl font-bold mt-8 mb-4">Website Management Committee</div>
         <div className="flex flex-wrap justify-center gap-8 text-xl">
           <div className="w-full sm:w-2/6">
-            <div>Mr. Rajeev Kumar Singh (Chair), Assistant Professor, Department of CSE-AIML</div>
+            <div>Mr. Rajeev Kumar Singh , Assistant Professor, Department of CSE-AIML (Chair)</div>
           </div>
         </div>
 
@@ -267,13 +267,13 @@ function Organisingcommittie() {
         <div className="flex flex-wrap justify-center gap-8 text-xl">
           <div className="w-full sm:w-2/6 md:w-[100%]">
             <div className="grid grid-cols-1 gap-1 mb-6 md:gap-4">
-              <div>Mr. Nagendra Nath Dubey (Chair), Assistant Professor, Department of CSE-AIML</div>
+              <div>Mr. Nagendra Nath Dubey , Assistant Professor, Department of CSE-AIML (Chair)</div>
             </div>
             <div className="grid grid-cols-1 gap-1 mb-6 md:gap-4">
-              <div>Mr. Sahil Bhatia (Co-Chair), Assistant Professor, Department of CSE-AIML</div>
+              <div>Mr. Sahil Bhatia , Assistant Professor, Department of CSE-AIML (Co-Chair)</div>
             </div>
             <div className="grid grid-cols-1 gap-1 mb-6 md:gap-4">
-              <div>Mr. Anuj Gupta (Member), Assistant Professor, Department of CSE-AI</div>
+              <div>Mr. Anuj Gupta , Assistant Professor, Department of CSE-AI (Member)</div>
             </div>
           </div>
         </div>
@@ -283,10 +283,10 @@ function Organisingcommittie() {
         <div className="flex flex-wrap justify-center gap-8 text-xl">
           <div className="w-full sm:w-2/6 mb-14 md:w-[100%]">
             <div className="grid grid-cols-1 gap-1 mb-6 md:gap-4">
-              <div>Ms. Nidhi Singh (Chair), Assistant Professor, Department of CSE-AIML</div>
+              <div>Ms. Nidhi Singh , Assistant Professor, Department of CSE-AIML (Chair)</div>
             </div>
             <div className="grid grid-cols-1 gap-1 mb-6 md:gap-4">
-              <div>Mr. Ashish Gaur (Co-Chair), Assistant Professor, Department of CSE-AI</div>
+              <div>Mr. Ashish Gaur , Assistant Professor, Department of CSE-AI (Co-Chair)</div>
             </div>
           </div>
         </div>
